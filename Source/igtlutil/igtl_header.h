@@ -69,6 +69,7 @@ typedef struct {
   igtl_uint16    meta_data_header_size;         /* size of the meta data header*/
   igtl_uint32    meta_data_size;                /* size of meta data */
   igtl_uint32    message_id;                    /* message id */
+  igtl_uint16    reserved;                      /* could be used for udp fragment ID */
 } igtl_extended_header;
 
 typedef struct {

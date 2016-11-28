@@ -137,6 +137,12 @@ namespace igtl
     /// Sets the message ID
     void SetMessageID(igtlUint32 idValue);
     
+    /// Gets the message ID
+    igtlUint16 GetReservedBytes();
+    
+    /// Sets the message ID
+    void SetReservedBytes(igtlUint16 idValue);
+    
     /// Add Meta data element
     void AddMetaDataElement(std::string key, igtlUint16 encodingScheme, std::string value);
     
@@ -350,6 +356,9 @@ namespace igtl
     
     /// Message ID
     igtlUint32 m_MessageId;
+    
+    /// Reserved Bytes
+    igtlUint16 m_ReservedBytes;
     
     /// Vector storing the meta data header entries
     std::vector<igtl_metadata_header_entry> m_MetaDataHeaderEntries;

@@ -187,11 +187,20 @@ IF ( ${OpenIGTLink_PROTOCOL_VERSION} GREATER "2")
     ${OpenIGTLink_SOURCES}
     igtlCommandMessage.cxx
     igtlutil/igtl_command.c
+    igtlGeneralSocket.cxx
+    igtlMessageRTPWrapper.cxx
+    igtlUDPClientSocket.cxx
+    igtlUDPServerSocket.cxx
     )
   SET(OpenIGTLink_INCLUDE_FILES
     ${OpenIGTLink_INCLUDE_FILES}
     igtlCommandMessage.h
     igtlutil/igtl_command.h
+    igtlGeneralSocket.h
+    igtlMessageRTPWrapper.h
+    igtlUDPClientSocket.h
+    igtlUDPServerSocket.h
+    
     )
 ENDIF ( ${OpenIGTLink_PROTOCOL_VERSION} GREATER "2")
 

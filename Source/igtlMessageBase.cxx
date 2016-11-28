@@ -52,6 +52,7 @@ MessageBase::MessageBase()
   , m_MetaDataSize(0)
   , m_MetaDataHeaderSize(0)
   , m_MessageId(0)
+  , m_ReservedBytes(0)
   , m_MetaDataHeaderEntries(std::vector<igtl_metadata_header_entry>())
   , m_MetaDataMap(std::map<std::string, std::string>())
 #endif
@@ -194,12 +195,23 @@ igtlUint32 MessageBase::GetMessageID()
 {
   return m_MessageId;
 }
+  
 
 void MessageBase::SetMessageID(igtlUint32 idValue)
 {
   m_MessageId = idValue;
 }
+  
+igtlUint16 MessageBase::GetReservedBytes()
+{
+  return m_ReservedBytes;
+}
 
+void MessageBase::SetReservedBytes(igtlUint16 bytes)
+{
+  m_ReservedBytes = bytes;
+}
+  
 void MessageBase::AddMetaDataElement(std::string key, igtlUint16 encodingScheme, std::string value)
 {
   igtl_metadata_header_entry entry;
@@ -238,6 +250,7 @@ bool MessageBase::PackExtendedHeader()
     extended_header->meta_data_header_size  = this->GetMetaDataHeaderSize();
     extended_header->meta_data_size         = this->GetMetaDataSize();
     extended_header->message_id             = this->GetMessageID();
+    extended_header->reserved               = this->GetReservedBytes();
     igtl_extended_header_convert_byte_order(extended_header);
 
     return true;
@@ -318,6 +331,7 @@ bool MessageBase::UnpackExtendedHeader()
     this->m_MetaDataHeaderSize  = extended_header->meta_data_header_size;
     this->m_MetaDataSize        = extended_header->meta_data_size;
     this->m_MessageId           = extended_header->message_id;
+    this->m_ReservedBytes       = extended_header->reserved;
 
     m_Content = &m_Body[extended_header->extended_header_size];
     m_MetaDataHeader = &m_Body[m_BodySizeToRead - extended_header->meta_data_header_size - extended_header->meta_data_size];
