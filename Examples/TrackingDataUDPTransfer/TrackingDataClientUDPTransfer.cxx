@@ -71,8 +71,10 @@ int main(int argc, char* argv[])
   unsigned char* bufferPKT = new unsigned char[RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH];
   igtl::MessageRTPWrapper::Pointer rtpWrapper = igtl::MessageRTPWrapper::New();
   igtl::TrackingDataMessage::Pointer trackingMultiPKTMSG = igtl::TrackingDataMessage::New();
+  trackingMultiPKTMSG->SetHeaderVersion(IGTL_HEADER_VERSION_2);
   //std::vector<ReorderBuffer> reorderBufferVec(10, ReorderBuffer();
   ReorderBuffer reorderBuffer = ReorderBuffer();
+  int extendedHeaderLength = sizeof(igtl_extended_header);
   int loop = 0;
   for (loop = 0; loop<100; loop++)
   {
@@ -94,14 +96,16 @@ int main(int argc, char* argv[])
       int curPackedMSGLocation = RTP_HEADER_LENGTH;
       while(curPackedMSGLocation<totMsgLen)
       {
-        igtl_uint8 fragmentNumber = *(bufferPKT + curPackedMSGLocation);
-        curPackedMSGLocation++;
         igtl::MessageHeader::Pointer header = igtl::MessageHeader::New();
         header->AllocatePack();
         memcpy(header->GetPackPointer(), bufferPKT + curPackedMSGLocation, IGTL_HEADER_SIZE);
-        curPackedMSGLocation += IGTL_HEADER_SIZE;
+        igtl_uint16 fragmentNumber = *(bufferPKT + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+extendedHeaderLength-2);
+        if(igtl_is_little_endian())
+        {
+          fragmentNumber = BYTE_SWAP_INT16(fragmentNumber);
+        }
         header->Unpack();
-        if(fragmentNumber==0X00) // fragment doesn't exist
+        if(fragmentNumber==0X0000) // fragment doesn't exist
         {
           
           if (strcmp(header->GetDeviceType(),"TDATA")==0)
@@ -109,40 +113,43 @@ int main(int argc, char* argv[])
             igtl::TrackingDataMessage::Pointer trackingMSG = igtl::TrackingDataMessage::New();
             trackingMSG->SetMessageHeader(header);
             trackingMSG->AllocatePack();
-            memcpy(trackingMSG->GetPackBodyPointer(), bufferPKT + curPackedMSGLocation, header->GetBodySizeToRead());
+            memcpy(trackingMSG->GetPackBodyPointer(), bufferPKT + curPackedMSGLocation+IGTL_HEADER_SIZE, header->GetBodySizeToRead());
           }
-          curPackedMSGLocation += header->GetBodySizeToRead();
+          curPackedMSGLocation += header->GetBodySizeToRead()+IGTL_HEADER_SIZE;
         }
         else
         {
           if (strcmp(header->GetDeviceType(),"TDATA")==0)
           {
-            int bodyMsgLength = (RTP_PAYLOAD_LENGTH-IGTL_HEADER_SIZE-1);//this is the length of the body within a full fragment paket
+            int bodyMsgLength = (RTP_PAYLOAD_LENGTH-IGTL_HEADER_SIZE-extendedHeaderLength);//this is the length of the body within a full fragment paket
             int totFragNumber = -1;
-            if(fragmentNumber==0X80)// To do, fix the issue when later fragment arrives earlier than the beginning fragment
+            if(fragmentNumber==0X8000)// To do, fix the issue when later fragment arrives earlier than the beginning fragment
             {
               trackingMultiPKTMSG->SetMessageHeader(header);
               trackingMultiPKTMSG->AllocatePack();
+              *(bufferPKT + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+extendedHeaderLength-2) = 0X0000; // set the fragment no. to 0000
               memcpy(reorderBuffer.buffer, bufferPKT + curPackedMSGLocation, totMsgLen-curPackedMSGLocation);
               reorderBuffer.firstPaketPos = totMsgLen-curPackedMSGLocation;
+              curPackedMSGLocation = totMsgLen;
             }
-            else if(fragmentNumber>0XE0)// this is the last fragment
+            else if(fragmentNumber>=0XE000)// this is the last fragment
             {
-              totFragNumber = fragmentNumber - 0XE0 + 1;
-              memcpy(reorderBuffer.buffer+reorderBuffer.firstPaketPos+(totFragNumber-2)*bodyMsgLength, bufferPKT + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+1, totMsgLen-(RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+1));
+              totFragNumber = fragmentNumber - 0XE000 + 1;
+              memcpy(reorderBuffer.buffer+reorderBuffer.firstPaketPos+(totFragNumber-1)*bodyMsgLength, bufferPKT + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+extendedHeaderLength, totMsgLen-(RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+extendedHeaderLength));
               reorderBuffer.receivedLastFrag = true;
             }
             else
             {
-              int curFragNumber = fragmentNumber - 0X80;
-              memcpy(reorderBuffer.buffer+reorderBuffer.firstPaketPos+(curFragNumber-1)*bodyMsgLength, bufferPKT + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+1, totMsgLen-(RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+1));
+              int curFragNumber = fragmentNumber - 0X8000;
+              memcpy(reorderBuffer.buffer+reorderBuffer.firstPaketPos+(curFragNumber-1)*bodyMsgLength, bufferPKT + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+extendedHeaderLength, totMsgLen-(RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+extendedHeaderLength));
             }
             reorderBuffer.filledPaketNum++;
-            if(reorderBuffer.receivedLastFrag == true && reorderBuffer.filledPaketNum == totFragNumber)
+            if(reorderBuffer.receivedLastFrag == true && reorderBuffer.filledPaketNum == (totFragNumber+1))
             {
-              memcpy(trackingMultiPKTMSG->GetPackBodyPointer(), reorderBuffer.buffer, header->GetBodySizeToRead());
+              memcpy(trackingMultiPKTMSG->GetPackBodyPointer(), reorderBuffer.buffer+IGTL_HEADER_SIZE, header->GetBodySizeToRead());
               ReceiveTrackingData(trackingMultiPKTMSG);
               reorderBuffer.filledPaketNum = 0;
+              reorderBuffer.receivedLastFrag = false;
             }
           }
           break;
@@ -156,23 +163,17 @@ int main(int argc, char* argv[])
 
 int ReceiveTrackingData(igtl::TrackingDataMessage::Pointer& msgData)
 {
-  // Receive body from the socket
-  igtl::TrackingDataMessage::Pointer trackingData;
-  trackingData = igtl::TrackingDataMessage::New();
-  //trackingData->SetMessageHeader(header);
-  trackingData->Copy(msgData);
-
   // Deserialize the transform data
   // If you want to skip CRC check, call Unpack() without argument.
-  int c = trackingData->Unpack(1);
+  int c = msgData->Unpack(1);
 
   if (c & igtl::MessageHeader::UNPACK_BODY) // if CRC check is OK
     {
-    int nElements = trackingData->GetNumberOfTrackingDataElements();
+    int nElements = msgData->GetNumberOfTrackingDataElements();
     for (int i = 0; i < nElements; i ++)
       {
       igtl::TrackingDataElement::Pointer trackingElement;
-      trackingData->GetTrackingDataElement(i, trackingElement);
+      msgData->GetTrackingDataElement(i, trackingElement);
 
       igtl::Matrix4x4 matrix;
       trackingElement->GetMatrix(matrix);

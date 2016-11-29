@@ -29,8 +29,8 @@
 #include "igtlMessageRTPWrapper.h"
 
 
-void WrapMessage(igtl::UDPServerSocket::Pointer serverSocket,igtl::MessageRTPWrapper::Pointer rtpWrapper);
-int   SendTrackingData(igtl::UDPServerSocket::Pointer& socket, igtl::TrackingDataMessage::Pointer& trackingMsg, igtl::MessageRTPWrapper::Pointer rtpWrapper);
+void WrapMessage(igtl::UDPServerSocket::Pointer &serverSocket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper);
+int   SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper);
 void  GetRandomTestMatrix(igtl::Matrix4x4& matrix, float phi, float theta);
 
 
@@ -66,7 +66,7 @@ int main(int argc, char* argv[])
   // loop
   for (int i = 0;i<100;i++)
   {
-    WrapMessage(serverSocket, rtpWrapper);
+    SendTrackingData(serverSocket, glock, rtpWrapper);
   }
   
   //------------------------------------------------------------
@@ -76,54 +76,7 @@ int main(int argc, char* argv[])
 }
 
 
-void WrapMessage(igtl::UDPServerSocket::Pointer serverSocket, igtl::MessageRTPWrapper::Pointer rtpWrapper)
-{
-  //------------------------------------------------------------
-  // Get user data
-  igtl::MutexLock::Pointer glock = igtl::MutexLock::New();
-  long interval = 5000;
-  std::cerr << "Interval = " << interval << " (ms)" << std::endl;
-  //long interval = 1000;
-  //long interval = (id + 1) * 100; // (ms)
-  //------------------------------------------------------------
-  // Allocate TrackingData Message Class
-  //
-  // NOTE: TrackingDataElement class instances are allocated
-  //       before the loop starts to avoid reallocation
-  //       in each image transfer.
-
-  igtl::TrackingDataMessage::Pointer trackingMsg;
-  trackingMsg = igtl::TrackingDataMessage::New();
-  trackingMsg->SetDeviceName("Tracker");
-
-  igtl::TrackingDataElement::Pointer trackElement0;
-  trackElement0 = igtl::TrackingDataElement::New();
-  trackElement0->SetName("Channel 0");
-  trackElement0->SetType(igtl::TrackingDataElement::TYPE_TRACKER);
-
-  igtl::TrackingDataElement::Pointer trackElement1;
-  trackElement1 = igtl::TrackingDataElement::New();
-  trackElement1->SetName("Channel 1");
-  trackElement1->SetType(igtl::TrackingDataElement::TYPE_6D);
-
-  igtl::TrackingDataElement::Pointer trackElement2;
-  trackElement2 = igtl::TrackingDataElement::New();
-  trackElement2->SetName("Channel 2");
-  trackElement2->SetType(igtl::TrackingDataElement::TYPE_5D);
-
-  trackingMsg->AddTrackingDataElement(trackElement0);
-  trackingMsg->AddTrackingDataElement(trackElement1);
-  trackingMsg->AddTrackingDataElement(trackElement2);
-
-  //------------------------------------------------------------
-  glock->Lock();
-  SendTrackingData(serverSocket, trackingMsg, rtpWrapper);
-  glock->Unlock();
-  igtl::Sleep(interval);
-}
-
-
-int SendTrackingData(igtl::UDPServerSocket::Pointer& socket, igtl::TrackingDataMessage::Pointer& trackingMsg, igtl::MessageRTPWrapper::Pointer rtpWrapper)
+int SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper)
 {
 
   static float phi0   = 0.0;
@@ -132,6 +85,30 @@ int SendTrackingData(igtl::UDPServerSocket::Pointer& socket, igtl::TrackingDataM
   static float theta1 = 0.0;
   static float phi2   = 0.0;
   static float theta2 = 0.0;
+  
+  igtl::TrackingDataMessage::Pointer trackingMsg;
+  trackingMsg = igtl::TrackingDataMessage::New();
+  trackingMsg->SetHeaderVersion(IGTL_HEADER_VERSION_2);
+  trackingMsg->SetDeviceName("Tracker");
+  
+  igtl::TrackingDataElement::Pointer trackElement0;
+  trackElement0 = igtl::TrackingDataElement::New();
+  trackElement0->SetName("Channel 0");
+  trackElement0->SetType(igtl::TrackingDataElement::TYPE_TRACKER);
+  
+  igtl::TrackingDataElement::Pointer trackElement1;
+  trackElement1 = igtl::TrackingDataElement::New();
+  trackElement1->SetName("Channel 1");
+  trackElement1->SetType(igtl::TrackingDataElement::TYPE_6D);
+  
+  igtl::TrackingDataElement::Pointer trackElement2;
+  trackElement2 = igtl::TrackingDataElement::New();
+  trackElement2->SetName("Channel 2");
+  trackElement2->SetType(igtl::TrackingDataElement::TYPE_5D);
+  
+  trackingMsg->AddTrackingDataElement(trackElement0);
+  trackingMsg->AddTrackingDataElement(trackElement1);
+  trackingMsg->AddTrackingDataElement(trackElement2);
 
   igtl::Matrix4x4 matrix;
   igtl::TrackingDataElement::Pointer ptr;
@@ -156,26 +133,34 @@ int SendTrackingData(igtl::UDPServerSocket::Pointer& socket, igtl::TrackingDataM
   int status = igtl::MessageRTPWrapper::PaketReady;
   igtl_uint8* messagePointer = (igtl_uint8*)trackingMsg->GetPackBodyPointer()+sizeof(igtl_extended_header);
   rtpWrapper->SetMSGHeader((igtl_uint8*)trackingMsg->GetPackPointer());
-  int messageLength = trackingMsg->CalculateReceiveContentSize();
+  int MSGContentLength = trackingMsg->GetPackBodySize()-sizeof(igtl_extended_header); // this is the m_content size + meta data size
   do
   {
-    status = rtpWrapper->WrapMessage(messagePointer, messageLength);
+    status = rtpWrapper->WrapMessage(messagePointer, MSGContentLength);
     if (status == igtl::MessageRTPWrapper::WaitingForFragment || status == igtl::MessageRTPWrapper::PaketReady)
     {
+      glock->Lock();
       socket->WriteSocket(rtpWrapper->GetPackPointer(), rtpWrapper->GetPackedMSGLocation());
+      igtl_uint16 fragmentNumber = *(rtpWrapper->GetPackPointer() + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+sizeof(igtl_extended_header)-2);
+      glock->Unlock();
       messagePointer += rtpWrapper->GetCurMSGLocation();
-      messageLength = trackingMsg->GetPackBodySize() - rtpWrapper->GetCurMSGLocation();
+      MSGContentLength = trackingMsg->GetPackBodySize() - sizeof(igtl_extended_header) - rtpWrapper->GetCurMSGLocation();
     }
   }while(status!=igtl::MessageRTPWrapper::PaketReady);
+  glock->Lock();
   socket->WriteSocket(rtpWrapper->GetPackPointer(), RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH);
+  glock->Unlock();
+  //------------------------------------------------------------
   
+  igtl::Sleep(2000);
+  std::cerr<<"Send"<<std::endl;
   phi0 += 0.1;
   phi1 += 0.2;
   phi2 += 0.3;
   theta0 += 0.2;
   theta1 += 0.1;
   theta2 += 0.05;
-
+  //trackingMsg->ClearTrackingDataElements();
   return 0;
 }
 

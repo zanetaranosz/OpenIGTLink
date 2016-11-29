@@ -104,11 +104,11 @@ namespace igtl {
       if (bodyMsgLen <= (AvailabeBytesNum-IGTL_HEADER_SIZE-this->extendedHeaderSize))
       {
         igtl_uint16 temp = 0X0000;
-        memmove(this->MSGHeader+IGTL_HEADER_SIZE+this->extendedHeaderSize-2, (void*)temp,2);// no fragmented message here
+        memmove(this->MSGHeader+IGTL_HEADER_SIZE+this->extendedHeaderSize-2, (void*)&temp,2);// no fragmented message here
         memmove(packedMsg+curPackedMSGLocation, this->MSGHeader, IGTL_HEADER_SIZE+this->extendedHeaderSize);
         curPackedMSGLocation += (IGTL_HEADER_SIZE + this->extendedHeaderSize);
         memmove(packedMsg + curPackedMSGLocation, (void *)(messageContent), bodyMsgLen);
-        AvailabeBytesNum -= (bodyMsgLen+1+IGTL_HEADER_SIZE);
+        AvailabeBytesNum -= (bodyMsgLen+this->extendedHeaderSize+IGTL_HEADER_SIZE);
         curPackedMSGLocation += bodyMsgLen;
         if (AvailabeBytesNum > MinimumPaketSpace)// when it is packing the fragment, we want to sent the data ASAP, otherwize, we will wait for another message
         {
@@ -127,11 +127,11 @@ namespace igtl {
         {
           temp = BYTE_SWAP_INT16(temp);
         }
-        memmove(this->MSGHeader+IGTL_HEADER_SIZE+this->extendedHeaderSize-2, (void*)temp,2);// no fragmented message here
-        // fragmented message exists, first bit indicate the existance, the second bit indicates if the current section is the ending fragment, the other 6 bits indicates the fragements' sequence number.
+        memmove(this->MSGHeader+IGTL_HEADER_SIZE+this->extendedHeaderSize-2, (void*)&temp,2);// no fragmented message here
+        // fragmented message exists, first bit indicate the existance, the second bit indicates if the current section is the ending fragment, the other 14 bits indicates the fragements' sequence number.
         memmove(packedMsg+curPackedMSGLocation, this->MSGHeader, IGTL_HEADER_SIZE+this->extendedHeaderSize);
         curPackedMSGLocation += (IGTL_HEADER_SIZE + this->extendedHeaderSize);
-        memmove(packedMsg + curPackedMSGLocation, (void *)(messageContent), AvailabeBytesNum-1-IGTL_HEADER_SIZE);
+        memmove(packedMsg + curPackedMSGLocation, (void *)(messageContent), AvailabeBytesNum-this->extendedHeaderSize-IGTL_HEADER_SIZE);
         status = WaitingForFragment;
         this->curPackedMSGLocation = RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH;
         this->curMSGLocation = AvailabeBytesNum-IGTL_HEADER_SIZE-this->extendedHeaderSize;
@@ -147,11 +147,15 @@ namespace igtl {
       framentNumber++;
       if (bodyMsgLen <= (AvailabeBytesNum-IGTL_HEADER_SIZE-this->extendedHeaderSize))
       {
-        igtl_uint8 temp = 0XE0+framentNumber; //set the seconde bit to be 1, indicates the end of fragmented msg.
-        memmove(packedMsg+curPackedMSGLocation, (void*)(&temp), 1);
-        curPackedMSGLocation++;
-        memmove(packedMsg+curPackedMSGLocation, this->MSGHeader, IGTL_HEADER_SIZE);
-        curPackedMSGLocation += IGTL_HEADER_SIZE;
+        igtl_uint16 temp = 0XE000+framentNumber; //set the seconde bit to be 1, indicates the end of fragmented msg.;
+        if(igtl_is_little_endian())
+        {
+          temp = BYTE_SWAP_INT16(temp);
+        }
+        memmove(this->MSGHeader+IGTL_HEADER_SIZE+this->extendedHeaderSize-2, (void*)&temp,2);
+        // fragmented message exists, first bit indicate the existance, the second bit indicates if the current section is the ending fragment, the other 14 bits indicates the fragements' sequence number.
+        memmove(packedMsg+curPackedMSGLocation, this->MSGHeader, IGTL_HEADER_SIZE+this->extendedHeaderSize);
+        curPackedMSGLocation += (IGTL_HEADER_SIZE + this->extendedHeaderSize);
         memmove(packedMsg + curPackedMSGLocation, (void *)(messageContent), bodyMsgLen);
         this->curPackedMSGLocation += bodyMsgLen;
         // when it is packing the fragment, we want to sent the data ASAP, otherwize, we will wait for another message
@@ -159,14 +163,17 @@ namespace igtl {
       }
       else if(bodyMsgLen > (AvailabeBytesNum-IGTL_HEADER_SIZE-this->extendedHeaderSize))
       {
-        igtl_uint8 temp = 0X80+framentNumber;
-        memmove(packedMsg+curPackedMSGLocation, (void*)(&temp), 1); //set the second bit to be 0, indicates more fragmented msg are comming.
-        curPackedMSGLocation++;
-        memmove(packedMsg+curPackedMSGLocation, MSGHeader, IGTL_HEADER_SIZE);
-        curPackedMSGLocation += IGTL_HEADER_SIZE;
-        memmove(packedMsg + curPackedMSGLocation, (void *)(messageContent), (AvailabeBytesNum-1));
+        igtl_uint16 temp = 0X0800+framentNumber; //set the seconde bit to be 1, indicates the end of fragmented msg.;
+        if(igtl_is_little_endian())
+        {
+          temp = BYTE_SWAP_INT16(temp);
+        }
+        memmove(this->MSGHeader+IGTL_HEADER_SIZE+this->extendedHeaderSize-2, (void*)&temp,2);//set the second bit to be 0, indicates more fragmented msg are comming.
+        memmove(packedMsg+curPackedMSGLocation, MSGHeader, IGTL_HEADER_SIZE+this->extendedHeaderSize);
+        curPackedMSGLocation += (IGTL_HEADER_SIZE + this->extendedHeaderSize);
+        memmove(packedMsg + curPackedMSGLocation, (void *)(messageContent), AvailabeBytesNum-this->extendedHeaderSize-IGTL_HEADER_SIZE);
         status = WaitingForFragment;
-        this->curMSGLocation += (AvailabeBytesNum-this->extendedHeaderSize);
+        this->curMSGLocation += (AvailabeBytesNum-this->extendedHeaderSize-IGTL_HEADER_SIZE);
       }
       AvailabeBytesNum = RTP_PAYLOAD_LENGTH;
     }
