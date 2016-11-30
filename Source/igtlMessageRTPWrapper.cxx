@@ -61,6 +61,16 @@ namespace igtl {
       CSRC = BYTE_SWAP_INT32(CSRC);
     }
   }
+  
+  void MessageRTPWrapper::SetSeqNum(igtl_uint16 num)
+  {
+    SeqNum = num;
+    if(igtl_is_little_endian())
+    {
+      SeqNum = BYTE_SWAP_INT16(num);
+    }
+  }
+  
   // SSRC should be set only once before wraping the message in a transmission session.
   // CSRC should be set when messages from different devices are packed into the same paket.
   // this special header is here for the compatiblity with standard RTP protocal.
@@ -158,6 +168,7 @@ namespace igtl {
         this->curPackedMSGLocation = RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH;
         this->curMSGLocation = AvailabeBytesNum-IGTL_HEADER_SIZE-this->extendedHeaderSize;
         AvailabeBytesNum = RTP_PAYLOAD_LENGTH;
+        SeqNum++;
       }
     }
     else
@@ -198,6 +209,7 @@ namespace igtl {
         this->curMSGLocation += (AvailabeBytesNum-this->extendedHeaderSize-IGTL_HEADER_SIZE);
       }
       AvailabeBytesNum = RTP_PAYLOAD_LENGTH;
+      SeqNum++;
     }
     return status;
   }

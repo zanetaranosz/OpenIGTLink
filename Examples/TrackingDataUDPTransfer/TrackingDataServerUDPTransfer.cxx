@@ -147,9 +147,6 @@ int SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MutexLock::Po
       MSGContentLength = trackingMsg->GetPackBodySize() - sizeof(igtl_extended_header) - rtpWrapper->GetCurMSGLocation();
     }
   }while(status!=igtl::MessageRTPWrapper::PaketReady);
-  glock->Lock();
-  socket->WriteSocket(rtpWrapper->GetPackPointer(), RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH);
-  glock->Unlock();
   //------------------------------------------------------------
   
   igtl::Sleep(2000);

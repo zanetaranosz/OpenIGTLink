@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
   socket->SetIPAddress("127.0.0.1");
   socket->SetPortNumber(port);
   socket->CreateUDPClient(port);
-  unsigned char* bufferPKT = new unsigned char[RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH];
+  unsigned char bufferPKT[RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH];
   igtl::MessageRTPWrapper::Pointer rtpWrapper = igtl::MessageRTPWrapper::New();
   igtl::TrackingDataMessage::Pointer trackingMultiPKTMSG = igtl::TrackingDataMessage::New();
   trackingMultiPKTMSG->SetHeaderVersion(IGTL_HEADER_VERSION_2);
@@ -114,6 +114,7 @@ int main(int argc, char* argv[])
             trackingMSG->SetMessageHeader(header);
             trackingMSG->AllocatePack();
             memcpy(trackingMSG->GetPackBodyPointer(), bufferPKT + curPackedMSGLocation+IGTL_HEADER_SIZE, header->GetBodySizeToRead());
+            ReceiveTrackingData(trackingMSG);
           }
           curPackedMSGLocation += header->GetBodySizeToRead()+IGTL_HEADER_SIZE;
         }
@@ -156,7 +157,7 @@ int main(int argc, char* argv[])
         }
       }
     }
-    igtl::Sleep(interval);
+    //igtl::Sleep(interval);
   }
 }
 

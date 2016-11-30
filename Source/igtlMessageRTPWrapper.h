@@ -32,7 +32,7 @@
 #endif
 
 #define RTP_HEADER_LENGTH 12
-#define RTP_PAYLOAD_LENGTH 200 //maximum 1500, minus 12 byte RTP and 32 byte IP address
+#define RTP_PAYLOAD_LENGTH 1200 //ypical Ethernet MTU is 1500 bytes, minus 12 byte RTP and 32 byte IP address
 #define MinimumPaketSpace RTP_PAYLOAD_LENGTH/3
 
 
@@ -88,6 +88,9 @@ public:
   
   ///Set the Contributing source identifier. different device has different CSRC
   void SetCSRC(igtl_uint32 identifier);
+  
+  ///Set the sequencen number at the rtp header
+  void SetSeqNum(igtl_uint16 num);
   
   ///Set the current msg header
   void SetMSGHeader(igtl_uint8* header);
