@@ -433,7 +433,11 @@ namespace igtl
   
   int GeneralSocket::SetPortNumber(igtl_uint16 port)
   {
+#if defined(_WIN32) && !defined(__CYGWIN__)
+    this->PortNum = port;
+#else
     this->PortNum = (in_port_t) port;
+#endif
     return 0;
   }
   
@@ -516,13 +520,20 @@ namespace igtl
 #endif
     struct sockaddr_in dest;
     dest.sin_family = AF_INET;
-    
+#if defined(OpenIGTLink_HAVE_GETSOCKNAME_WITH_SOCKLEN_T)
     // store this IP address in dest:
     inet_pton(AF_INET, this->IPAddress, &(dest.sin_addr));
-    dest.sin_port = htons(this->PortNum);
     socklen_t addressLen = sizeof dest;
-    int n = recvfrom(this->m_SocketDescriptor, (void*)buffer, length, 0, (struct sockaddr*)&dest, &addressLen);
+#else
+    int addressLen = sizeof(dest);
+#endif
     
+    dest.sin_port = htons(this->PortNum);
+#if defined(_WIN32) && !defined(__CYGWIN__)    
+    int n = recvfrom(this->m_SocketDescriptor, buffer, length, 0, (struct sockaddr*)&dest, &addressLen);
+#else
+    int n = recvfrom(this->m_SocketDescriptor, (void*)buffer, length, 0, (struct sockaddr*)&dest, &addressLen);
+#endif
 #if defined(_WIN32) && !defined(__CYGWIN__)
     if(n == 0)
     {
@@ -532,7 +543,6 @@ namespace igtl
       if ((error == WSAENOBUFS) && (trys++ < 1000))
       {
         Sleep(1);
-        continue;
       }
       // FIXME : Use exceptions ?  igtlErrorMacro("Socket Error: Receive failed.");
       return 0;

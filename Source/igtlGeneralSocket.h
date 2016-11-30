@@ -49,6 +49,7 @@
 #if defined(_WIN32) && !defined(__CYGWIN__)
 #include <windows.h>
 #include <winsock2.h>
+#include <Ws2tcpip.h>
 #else
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -59,6 +60,13 @@
 #include <unistd.h>
 #include <sys/time.h>
 #endif
+#if defined(_WIN32) && !defined(__CYGWIN__)
+#define IPAddressStrLen 16
+#define IP6AddressStrLen 46
+#else
+#define IPAddressStrLen INET_ADDRSTRLEN
+#endif
+
 
 namespace igtl
 {
@@ -216,8 +224,8 @@ namespace igtl
     int m_SendTimeoutFlag;
     int m_ReceiveTimeoutFlag;
     
-    in_port_t PortNum;
-    char IPAddress[INET_ADDRSTRLEN];
+    short PortNum;
+    char IPAddress[IPAddressStrLen];
     
   };
   

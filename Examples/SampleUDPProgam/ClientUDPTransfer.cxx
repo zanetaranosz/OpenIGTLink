@@ -1,10 +1,4 @@
-#include <arpa/inet.h>
-#include <netinet/in.h>
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <unistd.h>
-#include <string.h>
+#include "igtlClientSocket.h"
 
 #define BUFLEN 512
 #define NPACK 1000
@@ -15,6 +9,13 @@ void diep(char *s)
 	perror(s);
 	_exit(1);
 }
+
+#if defined(_WIN32) && !defined(__CYGWIN__)
+#define WSA_VERSION MAKEWORD(1,1)
+#define igtlCloseSocketMacro(sock) (closesocket(sock))
+#else
+#define igtlCloseSocketMacro(sock) (shutdown(sock, 2))
+#endif
 
 int main(void)
 {
@@ -38,7 +39,7 @@ int main(void)
 		printf("Received packet from %s:%d\nData: %s\n\n", 
 					 inet_ntoa(si_other.sin_addr), ntohs(si_other.sin_port), buf);
 	}
-
-	close(s);
-	return 0;
+  if (s>0)
+    igtlCloseSocketMacro(s);
+  return 0;
 }

@@ -30,7 +30,7 @@ if (${OpenIGTLink_PROTOCOL_VERSION} GREATER 1)
     )
 endif (${OpenIGTLink_PROTOCOL_VERSION} GREATER 1)
 
-SET(EXAMPLE_DIRS TrackingDataUDPTransfer SampleUDPProgam)
+SET(EXAMPLE_DIRS TrackingDataUDPTransfer)
 
 ## Imager program isn't supported by QNX
 if(NOT OpenIGTLink_PLATFORM_QNX)

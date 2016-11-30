@@ -48,13 +48,13 @@ class ClientDest
 public:
   ClientDest(const char* add, igtl_uint16 port, unsigned int clientID)
   {
-    this->address = new unsigned char[INET_ADDRSTRLEN];
+    this->address = new unsigned char[IPAddressStrLen];
     strcpy((char*)this->address, add);
     this->portNum = port;
     this->clientId = clientID;
   };
   unsigned char* address;
-  u_int16_t portNum; // should be in network byte order
+  igtl_uint16 portNum; // should be in network byte order
   unsigned int clientId;
 };
   

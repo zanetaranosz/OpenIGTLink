@@ -72,10 +72,32 @@ namespace igtl {
     igtl_uint32 rtpHdr = 0x80000000; // RTP version 2;
     rtpHdr |= (RTPPayLoadType<<16);
     rtpHdr |= SeqNum; // sequence number, increment the sequence number after sending the data
+#if defined(WIN32) || defined(_WIN32)
+
+                      //LARGE_INTEGER tick;
+                      //
+                      //::QueryPerformanceCounter( &tick );
+                      //
+                      //TimeStampType value = 
+                      //    static_cast< TimeStampType >( (__int64)tick.QuadPart ) / 
+                      //    this->m_WinFrequency;
+                      //
+                      //value += this->m_WinOrigin;
+                      //
+                      //double second = floor(value);
+
+    clock_t c1 = clock();
+    clock_t winClockOrigin = time(NULL);
+    clock_t second =  + (c1 - winClockOrigin) / CLOCKS_PER_SEC;
+    clock_t microsecond = (c1 - winClockOrigin) % CLOCKS_PER_SEC * (1e6 / CLOCKS_PER_SEC);
+    clock_t timeIncrement = appSpecificFreq*second;
+    timeIncrement += igtl_uint32(appSpecificFreq*(microsecond / 1.0e6) + 0.5);
+#else
     struct timeval timeNow;
     gettimeofday(&timeNow, NULL);
     igtl_uint32 timeIncrement = (appSpecificFreq*timeNow.tv_sec); //need to check the frequency of different application
     timeIncrement += igtl_uint32(appSpecificFreq*(timeNow.tv_usec/1.0e6)+ 0.5);
+#endif
     //igtl_uint32 CSRC = 0x00000000; not used currently
     if(igtl_is_little_endian())
     {
