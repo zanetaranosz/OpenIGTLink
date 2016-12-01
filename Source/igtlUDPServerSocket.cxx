@@ -42,7 +42,7 @@ UDPServerSocket::~UDPServerSocket()
   
 int UDPServerSocket::AddClient(const char* add, igtl_uint16 port, unsigned int clientID)
 {
-  for(int i = 0; this->clients.size(); i++)
+  for(int i = 0; i < this->clients.size(); i++)
   {
     if (this->clients[i].clientId == clientID &&
         (strcmp((const char *)this->clients[i].address ,add)==0)

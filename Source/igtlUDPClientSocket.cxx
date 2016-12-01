@@ -26,6 +26,7 @@
 
 =========================================================================*/
 #include "igtlUDPClientSocket.h"
+#include <string.h>
 
 namespace igtl
 {
