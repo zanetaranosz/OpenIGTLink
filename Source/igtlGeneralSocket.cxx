@@ -469,7 +469,7 @@ namespace igtl
 #else
 #define TTL_TYPE igtl_uint8
 #endif
-    igtl_uint8 ttlArg = 255; // 1 is the default value , valid value from 0 to 255
+    igtl_uint8 ttlArg = 1; // 1 is the default value , valid value from 0 to 255
     TTL_TYPE ttl = (TTL_TYPE)ttlArg;
     if (setsockopt(this->m_SocketDescriptor, IPPROTO_IP, IP_MULTICAST_TTL,
                    (const char*)&ttl, sizeof ttl) < 0) {

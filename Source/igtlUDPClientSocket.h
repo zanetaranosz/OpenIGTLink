@@ -50,7 +50,7 @@ public:
   igtlTypeMacro(igtl::UDPClientSocket, igtl::GeneralSocket)
   igtlNewMacro(igtl::UDPClientSocket);
   
-  int JoinGroup(const char* groupIPAddr, int portNum);
+  int JoinNetwork(const char* groupIPAddr, int portNum, bool joinGroup);
 
   int ReadSocket(unsigned char* buffer, unsigned bufferSize);
   

@@ -8,13 +8,31 @@
 //
 // This code has NOT been tested
 //
-
-#include <stdio.h>
+#if defined(_WIN32) && !defined(__CYGWIN__)
+#include <windows.h>
+#include <winsock2.h>
+#include <Ws2tcpip.h>
+#else
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <netinet/tcp.h>
 #include <arpa/inet.h>
+#include <netdb.h>
+#include <unistd.h>
+#include <sys/time.h>
+#endif
+
 #include <string.h>
+
+
+#if defined(_WIN32) && !defined(__CYGWIN__)
+#define WSA_VERSION MAKEWORD(1,1)
+#define igtlCloseSocketMacro(sock) (closesocket(sock))
+#else
+#define igtlCloseSocketMacro(sock) (shutdown(sock, 2))
+#endif
+
 
 #define MAXBUFSIZE 65536 // Max UDP Packet size is 64 Kbyte
 
@@ -24,7 +42,7 @@ int main()
   char buffer[MAXBUFSIZE];
   struct sockaddr_in saddr;
   struct in_addr iaddr;
-  unsigned char ttl = 3;
+  unsigned char ttl = 255;
   unsigned char one = 1;
   
   // set content of struct saddr and imreq to zero
@@ -35,7 +53,7 @@ int main()
   sock = socket(PF_INET, SOCK_DGRAM, 0);
   if ( sock < 0 )
   {
-    perror("Error creating socket"); return 0;
+    return 0;
   }
   
   saddr.sin_family = PF_INET;
@@ -45,7 +63,7 @@ int main()
   
   if ( status < 0 )
   {
-    perror("Error binding socket to interface"); return 0;
+    return 0;
   }
   
   iaddr.s_addr = INADDR_ANY; // use DEFAULT interface
@@ -79,7 +97,7 @@ int main()
   }
   
   // shutdown socket
-  shutdown(sock, 2);
+  igtlCloseSocketMacro(sock);
   
   return 0;
 }

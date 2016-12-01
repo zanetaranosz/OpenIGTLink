@@ -72,6 +72,22 @@ int UDPServerSocket::AddGroup(const char* add, igtl_uint16 port, unsigned int gr
   return 0;
 }
   
+int UDPServerSocket::AddClient(const char* add, igtl_uint16 port, unsigned int clientID)
+{
+  for(int i = 0; i < this->clients.size(); i++)
+  {
+    if (this->clients[i].clientID == clientID &&
+        (strcmp((const char *)this->clients[i].address ,add)==0)
+        && this->clients[i].portNum ==  port )
+    {
+      
+      return -1;
+    }
+  }
+  this->clients.push_back(ClientDest(add, port, clientID));
+  return 0;
+}
+  
 int UDPServerSocket::WriteSocket(unsigned char* buffer, unsigned bufferSize)
 {
   int successul = 0;
@@ -84,6 +100,21 @@ int UDPServerSocket::WriteSocket(unsigned char* buffer, unsigned bufferSize)
 #endif
     this->SetIPAddress((const char*)this->groups[i].address);
     this->SetPortNumber(this->groups[i].portNum);
+    successul = SendUDP((char*)buffer, bufferSize);
+    if (!successul) {
+      successul = -1;
+      continue; //to do: how to handle the unsuccessful transmission?
+    }
+  }
+  for(int i = 0; i < this->clients.size(); i++)
+  {
+#if defined(OpenIGTLink_HAVE_GETSOCKNAME_WITH_SOCKLEN_T)
+    socklen_t addressLength = sizeof(this->clients[i].address);
+#else
+    int addressLength = sizeof(this->groups[i].address);
+#endif
+    this->SetIPAddress((const char*)this->clients[i].address);
+    this->SetPortNumber(this->clients[i].portNum);
     successul = SendUDP((char*)buffer, bufferSize);
     if (!successul) {
       successul = -1;
@@ -106,15 +137,18 @@ int UDPServerSocket::CreateUDPServer(int port)
   {
     return -1;
   }
-  const igtl_uint8 loop = 0; //disable loop back to the host
+  const igtl_uint8 loop = 1; //enable loop back to the host, mainly for debug purpose
   if (setsockopt(this->m_SocketDescriptor, IPPROTO_IP, IP_MULTICAST_LOOP,
                  (const char*)&loop, sizeof loop) < 0) {
     CloseSocket(this->m_SocketDescriptor);
     return -1;
   }
-  
+#if defined (_WIN32)
+  const char addr = INADDR_ANY;
+#else
   struct in_addr addr;
   addr.s_addr = INADDR_ANY; // the address could be others
+#endif
   
   if (setsockopt(this->m_SocketDescriptor, IPPROTO_IP, IP_MULTICAST_IF, &addr, sizeof addr) < 0) {
     CloseSocket(this->m_SocketDescriptor);
@@ -122,8 +156,12 @@ int UDPServerSocket::CreateUDPServer(int port)
   }
   
   //If not otherwise specified, multicast datagrams are sent with a default value of 1, to prevent them to be forwarded beyond the local network. To change the TTL to the value you desire (from 0 to 255), put that value into a variable (here I name it "ttl") and write somewhere in your program:
-  
-  unsigned char ttl = 1;
+#if defined (_WIN32)
+#define TTL_TYPE const char
+#else
+#define TTL_TYPE igtl_uint8
+#endif
+  TTL_TYPE ttl = 64;
   if(setsockopt(this->m_SocketDescriptor, IPPROTO_IP, IP_MULTICAST_TTL, &ttl, sizeof(ttl))<0)
   {
     CloseSocket(this->m_SocketDescriptor);

@@ -53,7 +53,7 @@ int main(int argc, char* argv[])
   serverSocket = igtl::UDPServerSocket::New();
   int r = serverSocket->CreateUDPServer(port);
   serverSocket->AddGroup("226.0.0.1", 18944, 1);
-  //serverSocket->AddGroup("10.238.129.61", 18946, 2);
+  serverSocket->AddClient("10.22.178.204", 18946, 0);
   if (r < 0)
     {
     std::cerr << "Cannot create a server socket." << std::endl;

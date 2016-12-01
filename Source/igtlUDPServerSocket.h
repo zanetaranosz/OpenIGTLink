@@ -58,6 +58,21 @@ public:
   unsigned int groupID;
 };
   
+class ClientDest
+{
+public:
+  ClientDest(const char* add, igtl_uint16 port, unsigned int clientID)
+  {
+    this->address = new unsigned char[IPAddressStrLen];
+    strcpy((char*)this->address, add);
+    this->portNum = port;
+    this->clientID = clientID;
+  };
+  unsigned char* address;
+  igtl_uint16 portNum; // should be in network byte order
+  unsigned int clientID;
+};
+  
 class IGTLCommon_EXPORT UDPServerSocket : public GeneralSocket
 {
 public:
@@ -79,6 +94,12 @@ public:
   
   // Description:
   // Add a client socket with given address at a given port and binds to it.
+  // Returns -1 on error. return clientID on success.
+  int AddClient(const char* add, igtl_uint16 port, unsigned int clientID);
+  
+  
+  // Description:
+  // Add a client socket with given address at a given port and binds to it.
   // Returns -1 on error. 0 on success.
   int DeleteClient(unsigned int groupID);
   
@@ -96,6 +117,8 @@ protected:
   ~UDPServerSocket();
 
   std::vector<GroupDest> groups;
+  
+  std::vector<ClientDest> clients;
 
   void PrintSelf(std::ostream& os) const;
 

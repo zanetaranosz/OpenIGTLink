@@ -65,7 +65,8 @@ int main(int argc, char* argv[])
 
   igtl::UDPClientSocket::Pointer socket;
   socket = igtl::UDPClientSocket::New();
-  socket->JoinGroup("226.0.0.1", port);
+  socket->JoinNetwork("226.0.0.1", port, 1);
+  //socket->JoinNetwork("127.0.0.1", port, 0); // join the local network for a client connection
   unsigned char bufferPKT[RTP_PAYLOAD_LENGTH+RTP_HEADER_LENGTH];
   igtl::MessageRTPWrapper::Pointer rtpWrapper = igtl::MessageRTPWrapper::New();
   igtl::TrackingDataMessage::Pointer trackingMultiPKTMSG = igtl::TrackingDataMessage::New();
