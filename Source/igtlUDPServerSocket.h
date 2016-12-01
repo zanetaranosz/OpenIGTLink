@@ -39,23 +39,23 @@
 #include "igtlUDPClientSocket.h"
 #include "igtlWin32Header.h"
 #include "igtl_header.h"
-
+#include "igtl_util.h"
 
 namespace igtl
 {
-class ClientDest
+class GroupDest
 {
 public:
-  ClientDest(const char* add, igtl_uint16 port, unsigned int clientID)
+  GroupDest(const char* add, igtl_uint16 port, unsigned int groupID)
   {
     this->address = new unsigned char[IPAddressStrLen];
     strcpy((char*)this->address, add);
     this->portNum = port;
-    this->clientId = clientID;
+    this->groupID = groupID;
   };
   unsigned char* address;
   igtl_uint16 portNum; // should be in network byte order
-  unsigned int clientId;
+  unsigned int groupID;
 };
   
 class IGTLCommon_EXPORT UDPServerSocket : public GeneralSocket
@@ -68,16 +68,19 @@ public:
 
   igtlTypeMacro(igtl::UDPServerSocket, igtl::GeneralSocket);
   igtlNewMacro(igtl::UDPServerSocket);
+  
+  bool IsMulticastAddreesValid(const char* add);
 
+  
   // Description:
   // Add a client socket with given address at a given port and binds to it.
   // Returns -1 on error. return clientID on success.
-  int AddClient(const char* add, igtl_uint16 port, unsigned int clientID);
+  int AddGroup(const char* add, igtl_uint16 port, unsigned int clientID);
   
   // Description:
   // Add a client socket with given address at a given port and binds to it.
   // Returns -1 on error. 0 on success.
-  int DeleteClient(unsigned int clientID);
+  int DeleteClient(unsigned int groupID);
   
   // Description:
   // Creates a UDP server socket at a given port and binds to it.
@@ -92,7 +95,7 @@ protected:
   UDPServerSocket();
   ~UDPServerSocket();
 
-  std::vector<ClientDest> clients;
+  std::vector<GroupDest> groups;
 
   void PrintSelf(std::ostream& os) const;
 

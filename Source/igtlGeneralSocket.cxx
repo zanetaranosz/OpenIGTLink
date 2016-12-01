@@ -106,21 +106,7 @@ namespace igtl
     }
 #endif
     int sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
-    
-    const igtl_uint8 loop = 0; //disable loop back to the host
-    if (setsockopt(sock, IPPROTO_IP, IP_MULTICAST_LOOP,
-                   (const char*)&loop, sizeof loop) < 0) {
-      CloseSocket(sock);
-      return -1;
-    }
-    /*
-    struct in_addr addr;
-    addr.s_addr = INADDR_BROADCAST; // the address could be others
-    
-    if (setsockopt(sock, IPPROTO_IP, IP_MULTICAST_IF, &addr, sizeof addr) < 0) {
-      CloseSocket(sock);
-      return -1;
-    }*/
+
     return sock;
   }
   
@@ -131,7 +117,7 @@ namespace igtl
     struct sockaddr_in server;
     
     server.sin_family = AF_INET;
-    server.sin_addr.s_addr = INADDR_ANY;
+    server.sin_addr.s_addr = htonl(INADDR_ANY);
     server.sin_port = htons(port);
     // Allow the socket to be bound to an address that is already in use
 #ifdef _WIN32
@@ -520,9 +506,9 @@ namespace igtl
 #endif
     struct sockaddr_in dest;
     dest.sin_family = AF_INET;
+    dest.sin_addr.s_addr = htonl(INADDR_ANY);
 #if defined(OpenIGTLink_HAVE_GETSOCKNAME_WITH_SOCKLEN_T)
     // store this IP address in dest:
-    inet_pton(AF_INET, this->IPAddress, &(dest.sin_addr));
     socklen_t addressLen = sizeof dest;
 #else
     int addressLen = sizeof(dest);

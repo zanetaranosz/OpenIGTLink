@@ -41,20 +41,30 @@ UDPClientSocket::~UDPClientSocket()
 {
 }
   
-int UDPClientSocket::CreateUDPClient(int portNum)
+int UDPClientSocket::JoinGroup(const char* groupIPAddr, int portNum)
 {
-  struct sockaddr_in si_me;
-  memset((char *) &si_me, 0, sizeof(si_me));
-  si_me.sin_family = AF_INET;
-  si_me.sin_port = htons(portNum);
-  si_me.sin_addr.s_addr = htonl(INADDR_ANY);
-  this->m_SocketDescriptor= this->CreateUDPSocket();
-  BindSocket(this->m_SocketDescriptor, portNum);
+  this->m_SocketDescriptor = this->CreateUDPSocket();
+  this->SetIPAddress("226.0.0.1");
+  this->SetPortNumber(portNum);
+  if(BindSocket(this->m_SocketDescriptor, portNum)==0);
+  {
   /*With UDP, you have to bind() the socket in the client because UDP is connectionless, so there is no other way for the stack to know which program to deliver datagrams to for a particular port.
   
   If you could recvfrom() without bind(), you'd essentially be asking the stack to give your program all UDP datagrams sent to that computer. Since the stack delivers datagrams to only one program, this would break DNS, Windows' Network Neighborhood, network time sync....*/
+
+    struct ip_mreq imreq;
+    imreq.imr_multiaddr.s_addr = inet_addr(groupIPAddr);
+    imreq.imr_interface.s_addr = INADDR_ANY; // use DEFAULT interface
+    
+    // JOIN multicast group on default interface
+    if(setsockopt(this->m_SocketDescriptor, IPPROTO_IP, IP_ADD_MEMBERSHIP,
+                        (const void *)&imreq, sizeof(struct ip_mreq))==0)
+    {
+      return this->m_SocketDescriptor;
+    }
+  }
   
-  return this->m_SocketDescriptor;
+  return -1;
 }
 
 //-----------------------------------------------------------------------------
