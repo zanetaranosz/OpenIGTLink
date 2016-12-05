@@ -21,7 +21,10 @@
 #include "igtlMacro.h"
 #include "igtlMath.h"
 #include "igtlMessageBase.h"
-
+#include "igtlMessageFactory.h"
+#include "igtlUDPServerSocket.h"
+#include "igtlUDPClientSocket.h"
+#include "igtlMutexLock.h"
 #include "igtl_header.h"
 #include "igtl_util.h"
 
@@ -30,11 +33,6 @@
 #else
 #include <sys/time.h>
 #endif
-
-#define RTP_HEADER_LENGTH 12
-#define RTP_PAYLOAD_LENGTH 1200 //ypical Ethernet MTU is 1500 bytes, minus 12 byte RTP and 32 byte IP address
-#define MinimumPaketSpace RTP_PAYLOAD_LENGTH/3
-
 
 namespace igtl
 {
@@ -68,16 +66,15 @@ public:
   /// Sets the pointer to the scalar data (for fragmented pack support).
   //virtual void  SetScalarPointer(unsigned char * p);
 
-  /// Gets a pointer to the scalar data (for fragmented pack support).
-  igtl_uint8* GetPackPointer(){return packedMsg;};
-
   /// Gets the number of fragments for the packed (serialized) data. Returns numberOfDataFrag
   int GetNumberODataFragments() { return numberOfDataFrag;  /* the data for transmission is too big for UDP transmission, so the data will be transmitted by multiple packets*/ };
   
   /// Gets the number of fragments to be sent for the packed (serialized) data. Returns numberOfDataFragToSent
   int GetNumberODataFragToSent() { return numberOfDataFragToSent;  /* the data for transmission is too big for UDP transmission, so the data will be transmitted by multiple packets*/ };
   
-  int WrapMessage(igtl_uint8* messageContent, int bodyMsgLen);
+  int WrapMessageAndSend(igtl::UDPServerSocket::Pointer &socket, igtl_uint8* messageContent, int bodyMsgLen);
+  
+  int UnWrapMessageWithTypeAndName(igtlUint8 * UDPPaket, igtlUint16 totMsgLen, igtl::MessageBase::Pointer & MSGPointer, const char *deviceType, const char * deviceName);
   
   igtl::MessageBase::Pointer UnWrapMessage(igtl_uint8* messageContent, int totMsgLen);
   
@@ -99,9 +96,17 @@ public:
   
   int GetPackedMSGLocation(){return this->curPackedMSGLocation;};
   
+  int GetRTPWrapperStatus(){return status;};
+  
 protected:
   MessageRTPWrapper();
   ~MessageRTPWrapper();
+  
+  /// Gets a pointer to the scalar data (for fragmented pack support).
+  igtl_uint8* GetPackPointer(){return packedMsg;};
+  
+  int WrapMessage(igtl_uint8* messageContent, int bodyMsgLen);
+
   
 private:
   igtl_uint16 extendedHeaderSize;
@@ -120,6 +125,8 @@ private:
   igtl_uint32 SSRC;
   igtl_uint32 CSRC;
   igtl_uint32 fragmentTimeIncrement;
+  igtl::MutexLock::Pointer glock;
+  igtl::ReorderBuffer* reorderBuffer;
   
 };
 

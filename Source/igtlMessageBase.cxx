@@ -722,6 +722,7 @@ int MessageBase::CopyBody(const MessageBase *mb)
     if( m_HeaderVersion == IGTL_HEADER_VERSION_2 )
     {
       igtl_extended_header* other_ext_header = (igtl_extended_header*)(mb->m_ExtendedHeader);
+      igtl_extended_header_convert_byte_order(other_ext_header);
       if( other_ext_header->extended_header_size != sizeof(igtl_extended_header) )
       {
         return 0;

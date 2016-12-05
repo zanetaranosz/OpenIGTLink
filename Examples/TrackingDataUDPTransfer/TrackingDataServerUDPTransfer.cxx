@@ -29,8 +29,8 @@
 #include "igtlMessageRTPWrapper.h"
 
 
-void WrapMessage(igtl::UDPServerSocket::Pointer &serverSocket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper);
-int   SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper);
+//void WrapMessage(igtl::UDPServerSocket::Pointer &serverSocket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper);
+int   SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MessageRTPWrapper::Pointer &rtpWrapper);
 void  GetRandomTestMatrix(igtl::Matrix4x4& matrix, float phi, float theta);
 
 
@@ -61,13 +61,12 @@ int main(int argc, char* argv[])
     }
 
   igtl::MultiThreader::Pointer threader = igtl::MultiThreader::New();
-  igtl::MutexLock::Pointer glock = igtl::MutexLock::New();
   igtl::MessageRTPWrapper::Pointer rtpWrapper = igtl::MessageRTPWrapper::New();
   //------------------------------------------------------------
   // loop
   for (int i = 0;i<100;i++)
   {
-    SendTrackingData(serverSocket, glock, rtpWrapper);
+    SendTrackingData(serverSocket, rtpWrapper);
   }
   
   //------------------------------------------------------------
@@ -77,7 +76,7 @@ int main(int argc, char* argv[])
 }
 
 
-int SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MutexLock::Pointer &glock, igtl::MessageRTPWrapper::Pointer &rtpWrapper)
+int SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MessageRTPWrapper::Pointer &rtpWrapper)
 {
 
   static float phi0   = 0.0;
@@ -135,19 +134,7 @@ int SendTrackingData(igtl::UDPServerSocket::Pointer &socket, igtl::MutexLock::Po
   igtl_uint8* messagePointer = (igtl_uint8*)trackingMsg->GetPackBodyPointer()+sizeof(igtl_extended_header);
   rtpWrapper->SetMSGHeader((igtl_uint8*)trackingMsg->GetPackPointer());
   int MSGContentLength = trackingMsg->GetPackBodySize()-sizeof(igtl_extended_header); // this is the m_content size + meta data size
-  do
-  {
-    status = rtpWrapper->WrapMessage(messagePointer, MSGContentLength);
-    if (status == igtl::MessageRTPWrapper::WaitingForFragment || status == igtl::MessageRTPWrapper::PaketReady)
-    {
-      glock->Lock();
-      socket->WriteSocket(rtpWrapper->GetPackPointer(), rtpWrapper->GetPackedMSGLocation());
-      igtl_uint16 fragmentNumber = *(rtpWrapper->GetPackPointer() + RTP_HEADER_LENGTH+IGTL_HEADER_SIZE+sizeof(igtl_extended_header)-2);
-      glock->Unlock();
-      messagePointer += rtpWrapper->GetCurMSGLocation();
-      MSGContentLength = trackingMsg->GetPackBodySize() - sizeof(igtl_extended_header) - rtpWrapper->GetCurMSGLocation();
-    }
-  }while(status!=igtl::MessageRTPWrapper::PaketReady);
+  status = rtpWrapper->WrapMessageAndSend(socket, messagePointer, MSGContentLength);
   //------------------------------------------------------------
   
   igtl::Sleep(2000);
