@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{CA9FC24E-C41B-3FB9-B8FC-73E11603FA6D}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\build\Testing;D:\OpenIGTLink\OpenIGTLink\build\Testing\gtest\include;D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\build\Testing;D:\OpenIGTLink\OpenIGTLink\build\Testing\gtest\include;D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\build\Testing;D:\OpenIGTLink\OpenIGTLink\build\Testing\gtest\include;D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\build\Testing;D:\OpenIGTLink\OpenIGTLink\build\Testing\gtest\include;D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkConfig.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\build\UseOpenIGTLink.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeImportBuildSettings.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\Testing\igtlTestConfig.h.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkConfig.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\build\UseOpenIGTLink.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeImportBuildSettings.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\Testing\igtlTestConfig.h.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkConfig.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\build\UseOpenIGTLink.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeImportBuildSettings.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\Testing\igtlTestConfig.h.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/Testing/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkConfig.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\build\UseOpenIGTLink.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeImportBuildSettings.cmake;D:\OpenIGTLink\OpenIGTLink\build\OpenIGTLinkTargets.cmake;D:\OpenIGTLink\OpenIGTLink\Testing\igtlTestConfig.h.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt.in;D:\OpenIGTLink\OpenIGTLink\Testing\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/ZERO_CHECK.vcxproj">
+      <Project>A6EB92E9-7616-39A1-A0B6-E45F19A8645A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build/gmock.vcxproj">
+      <Project>34C922D9-E595-3BD6-9669-4190A9B7603E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build/gmock_main.vcxproj">
+      <Project>1ED3BBD4-E895-3431-8EF3-6FA4C26B15DA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build/gtest/gtest.vcxproj">
+      <Project>FB1E994F-B245-3EA8-A793-B6546649FEA6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build/gtest/gtest_main.vcxproj">
+      <Project>22615AC0-280B-3D9E-8B49-FD2ADC4AE189</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlBindMessageTest.vcxproj">
+      <Project>F510BC30-1E6B-3918-8121-1AAC22A0FD93</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlCapabilityMessageTest.vcxproj">
+      <Project>2AB6B74E-8C1B-347D-92FE-60B6B307A8E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlColorTableMessageTest.vcxproj">
+      <Project>81BC5050-C874-3C0F-B929-5C49E6A0F86D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlCommandMessageTest.vcxproj">
+      <Project>163A9BE9-713F-348D-B7E9-82045A872A42</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlConditionVariableTest.vcxproj">
+      <Project>DB906D0A-5AD0-3CD7-ADD2-38656405D0B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlImageMessage2Test.vcxproj">
+      <Project>E0DCD965-15E3-32A7-A8D7-4C363F1591F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlImageMessageTest.vcxproj">
+      <Project>B35550F5-6771-3D96-9228-2BD83E01546C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlImageMetaMessageTest.vcxproj">
+      <Project>C5C40FFE-7393-364C-9579-2E6E95457144</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlLabelMetaMessageTest.vcxproj">
+      <Project>699AB7FD-9FAF-337C-BD83-2318FE46326E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlMessageBaseTest.vcxproj">
+      <Project>8F4E68C3-0C43-3999-B238-538B12436A65</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlMessageFactoryTest.vcxproj">
+      <Project>7D25A8BC-2D07-3B56-8D63-92C1D7C8FF0A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlMultiThreaderTest1.vcxproj">
+      <Project>2FC8923C-15FF-370C-B9FD-03485BAACC14</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlMultiThreaderTest2.vcxproj">
+      <Project>DAE06A06-AB2F-38C1-ACDB-E28A83F605DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlMultiThreaderTest3.vcxproj">
+      <Project>87309949-6AE9-3573-8D87-42C5C3439E34</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlNDArrayMessageTest.vcxproj">
+      <Project>1CF2B0CB-892C-3E84-81E2-51179C690BAA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlPointMessageTest.vcxproj">
+      <Project>029A1A16-7E36-38AD-896B-9DFCE728E63A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlPolyDataMessageTest.vcxproj">
+      <Project>46EABAE0-BDF4-3C83-AC07-CDE9348DD6A2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlPositionMessageTest.vcxproj">
+      <Project>950D8381-A652-3452-8728-C661F5DA5B12</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlSensorMessageTest.vcxproj">
+      <Project>9292AC85-CD37-3D5B-AEDA-F1CF3E9C8E32</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlStatusMessageTest.vcxproj">
+      <Project>9D89F104-B0D8-3AB1-BDA5-54FA0B9568AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlStringMessageTest.vcxproj">
+      <Project>0F5A5E23-2929-3D9F-B0AA-7609D72D37C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlTimeStampTest1.vcxproj">
+      <Project>ACF7CFFD-DA0A-3CFD-9B5E-A4782A1E8022</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlTrackingDataMessageTest.vcxproj">
+      <Project>1CCAB7AD-F78F-360B-8F14-458567CFC349</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlTrajectoryMessageTest.vcxproj">
+      <Project>191106F3-9C34-3EE5-9F19-6D8489886494</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlTransformMessageTest.vcxproj">
+      <Project>77F715B9-EE7C-311A-BAB1-954724284141</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_bind_test.vcxproj">
+      <Project>D20F4D78-4BE5-36D7-AB96-64E3C806D4BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_capability_test.vcxproj">
+      <Project>9B87D961-3045-3AED-9BAC-38581F324D3A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_colortable_test.vcxproj">
+      <Project>FE726DAE-1AED-303E-ADBB-8E7ACF82F9E7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_header_test.vcxproj">
+      <Project>64BD5E0F-FDE0-35FC-A5D7-9975B7B6E875</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_image_test.vcxproj">
+      <Project>2F81783B-E586-3F4F-BF10-A4DC2AEF619B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_imgmeta_test.vcxproj">
+      <Project>BFC6296D-DBA3-3086-A1F7-24195156EC59</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_lbmeta_test.vcxproj">
+      <Project>A101D142-1509-3B82-B2A0-8C3419A5FBB4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_ndarray_test.vcxproj">
+      <Project>6632716B-2626-3D7F-9D0F-A0D85F31895C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_point_test.vcxproj">
+      <Project>4CCBFF3F-A68E-30F1-99DB-AC3A1D7C6539</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_polydata_test.vcxproj">
+      <Project>A844DF17-C7A7-35C0-9416-FF728C848DCA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_position_test.vcxproj">
+      <Project>063920C6-D78E-3734-B119-03607CEE1C26</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_sensor_test.vcxproj">
+      <Project>7682FBC2-D680-37BB-AF9B-8D29C1B09207</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_status_test.vcxproj">
+      <Project>54F094D6-F5EC-32C2-B994-69CC163A45A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_string_test.vcxproj">
+      <Project>F257D91C-560F-3E0D-AC58-7FF6FD9328C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_tdata_test.vcxproj">
+      <Project>680A87EB-BC72-372F-BF2E-7F2CE9457253</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_trajectory_test.vcxproj">
+      <Project>EB76E817-A162-3985-96E1-E731CF19B4A3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_transform_test.vcxproj">
+      <Project>CFC7A553-88CD-32B4-9E0F-29AB01684D3B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil/igtl_util_test.vcxproj">
+      <Project>D8B61271-46F8-337C-BBE5-EC26A8748962</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

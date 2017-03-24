@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{FF60EE67-D94B-378C-83B0-AC7B1A708C06}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>googlemock</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download -BD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\3.7.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googletest-prefix\tmp\googletest-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download -BD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\3.7.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googletest-prefix\tmp\googletest-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download -BD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\3.7.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googletest-prefix\tmp\googletest-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download -BD:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystem.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\3.7.0-rc1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googletest-prefix\tmp\googletest-cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.7\Modules\ExternalProject-download.cmake.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt.in;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating directories for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating directories for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Creating directories for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Creating directories for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-mkdir.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing download step (download, verify and extract) for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/download-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/verify-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/extract-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-download.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\googlemock-urlinfo.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing download step (download, verify and extract) for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/download-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/verify-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/extract-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-download.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\googlemock-urlinfo.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Performing download step (download, verify and extract) for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/download-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/verify-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/extract-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-download.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\googlemock-urlinfo.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Performing download step (download, verify and extract) for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/download-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/verify-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/extract-googlemock.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-download.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\googlemock-urlinfo.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No update step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-update.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No update step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-update.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No update step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-update.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No update step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-update.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No patch step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-patch.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No patch step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-patch.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No patch step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-patch.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No patch step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-patch.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No configure step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-configure.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No configure step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-configure.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No configure step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-configure.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No configure step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-configure.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\tmp\googlemock-cfgcmd.txt;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No build step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-build.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No build step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-build.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No build step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-build.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No build step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-build.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No install step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-install.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No install step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-install.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No install step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-install.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No install step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-install.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">No test step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-test.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">No test step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-test.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">No test step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-test.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">No test step for 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\OpenIGTLink\OpenIGTLink\build\Testing\gmock-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/73aaf51e6e6b20ab76c4d676a11f59f7/googlemock-test.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\8b2aa070e384deca47602bd8a8b59542\googlemock-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Completed 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)/googlemock-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/8b2aa070e384deca47602bd8a8b59542/googlemock-complete.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Completed 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)/googlemock-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/8b2aa070e384deca47602bd8a8b59542/googlemock-complete.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Completed 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)/googlemock-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/8b2aa070e384deca47602bd8a8b59542/googlemock-complete.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Completed 'googlemock'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/$(Configuration)/googlemock-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/googlemock-prefix/src/googlemock-stamp/$(Configuration)/googlemock-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/8b2aa070e384deca47602bd8a8b59542/googlemock-complete.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-mkdir;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-download;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-update;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-patch;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-configure;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-build;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-install;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\googlemock-prefix\src\googlemock-stamp\$(Configuration)\googlemock-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\ae97a4182734d1f8677e3afaf583f406\googlemock.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/ae97a4182734d1f8677e3afaf583f406/googlemock.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\googlemock</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/ae97a4182734d1f8677e3afaf583f406/googlemock.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\googlemock</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/ae97a4182734d1f8677e3afaf583f406/googlemock.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\googlemock</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/CMakeFiles/ae97a4182734d1f8677e3afaf583f406/googlemock.rule;D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\$(Configuration)\googlemock-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\googlemock</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\googlemock" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/Testing/googletest-download/ZERO_CHECK.vcxproj">
+      <Project>1DEBF067-1F03-364D-A3C0-41E263D36593</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,125 @@
+igtlMultiThreaderTest1 0 0
+igtlMultiThreaderTest2 0 0
+igtlMultiThreaderTest3 0 0
+igtlMessageFactoryTest 0 0
+igtlTimeStampTest1 0 0
+igtlMessageBaseTest 0 0
+igtlConditionVariableTest 0 0
+igtlImageMessageTest 0 0
+igtlImageMessage2Test 0 0
+igtlCapabilityMessageTest 0 0
+igtlStatusMessageTest 0 0
+igtlTransformMessageTest 0 0
+igtlPositionMessageTest 0 0
+igtlBindMessageTest 0 0
+igtlColorTableMessageTest 0 0
+igtlLabelMetaMessageTest 0 0
+igtlNDArrayMessageTest 0 0
+igtlImageMetaMessageTest 0 0
+igtlPointMessageTest 0 0
+igtlPolyDataMessageTest 0 0
+igtlSensorMessageTest 0 0
+igtlStringMessageTest 0 0
+igtlTrackingDataMessageTest 0 0
+igtlTrajectoryMessageTest 0 0
+igtlMessageBaseTestFormatVersion2 0 0
+igtlImageMessageTestFormatVersion2 0 0
+igtlImageMessage2TestFormatVersion2 0 0
+igtlBindMessageTestFormatVersion2 0 0
+igtlCapabilityMessageTestFormatVersion2 0 0
+igtlColorTableMessageTestFormatVersion2 0 0
+igtlConditionVariableTestFormatVersion2 0 0
+igtlLabelMetaMessageTestFormatVersion2 0 0
+igtlNDArrayMessageTestFormatVersion2 0 0
+igtlImageMetaMessageTestFormatVersion2 0 0
+igtlPointMessageTestFormatVersion2 0 0
+igtlPolyDataMessageTestFormatVersion2 0 0
+igtlSensorMessageTestFormatVersion2 0 0
+igtlStatusMessageTestFormatVersion2 0 0
+igtlStringMessageTestFormatVersion2 0 0
+igtlTrackingDataMessageTestFormatVersion2 0 0
+igtlTrajectoryMessageTestFormatVersion2 0 0
+igtlTransformMessageTestFormatVersion2 0 0
+igtlCommandMessageTestFormatVersion1 0 0
+igtlCommandMessageTestFormatVersion2 0 0
+igtl_image_test_01 0 0
+igtl_header_test_01 0 0
+igtl_transform_test_01 0 0
+igtl_status_test_01 0 0
+igtl_util_test_01 0 0
+igtl_position_test_01 0 0
+igtl_capability_test_01 0 0
+igtl_colortable_test_01 0 0
+igtl_imgmeta_test_01 0 0
+igtl_lbmeta_test_01 0 0
+igtl_point_test_01 0 0
+igtl_tdata_test_01 0 0
+igtl_trajectory_test_01 0 0
+igtl_sensor_test_01 0 0
+igtl_string_test_01 0 0
+igtl_bind_test_01 0 0
+igtl_ndarray_test_01 0 0
+igtl_polydata_test_01 0 0
+---
+igtlMultiThreaderTest1
+igtlMultiThreaderTest2
+igtlMultiThreaderTest3
+igtlMessageFactoryTest
+igtlTimeStampTest1
+igtlMessageBaseTest
+igtlConditionVariableTest
+igtlImageMessageTest
+igtlImageMessage2Test
+igtlCapabilityMessageTest
+igtlStatusMessageTest
+igtlTransformMessageTest
+igtlPositionMessageTest
+igtlBindMessageTest
+igtlColorTableMessageTest
+igtlLabelMetaMessageTest
+igtlNDArrayMessageTest
+igtlImageMetaMessageTest
+igtlPointMessageTest
+igtlPolyDataMessageTest
+igtlSensorMessageTest
+igtlStringMessageTest
+igtlTrackingDataMessageTest
+igtlTrajectoryMessageTest
+igtlMessageBaseTestFormatVersion2
+igtlImageMessageTestFormatVersion2
+igtlImageMessage2TestFormatVersion2
+igtlBindMessageTestFormatVersion2
+igtlCapabilityMessageTestFormatVersion2
+igtlColorTableMessageTestFormatVersion2
+igtlConditionVariableTestFormatVersion2
+igtlLabelMetaMessageTestFormatVersion2
+igtlNDArrayMessageTestFormatVersion2
+igtlImageMetaMessageTestFormatVersion2
+igtlPointMessageTestFormatVersion2
+igtlPolyDataMessageTestFormatVersion2
+igtlSensorMessageTestFormatVersion2
+igtlStatusMessageTestFormatVersion2
+igtlStringMessageTestFormatVersion2
+igtlTrackingDataMessageTestFormatVersion2
+igtlTrajectoryMessageTestFormatVersion2
+igtlTransformMessageTestFormatVersion2
+igtlCommandMessageTestFormatVersion1
+igtlCommandMessageTestFormatVersion2
+igtl_image_test_01
+igtl_header_test_01
+igtl_transform_test_01
+igtl_status_test_01
+igtl_util_test_01
+igtl_position_test_01
+igtl_capability_test_01
+igtl_colortable_test_01
+igtl_imgmeta_test_01
+igtl_lbmeta_test_01
+igtl_point_test_01
+igtl_tdata_test_01
+igtl_trajectory_test_01
+igtl_sensor_test_01
+igtl_string_test_01
+igtl_bind_test_01
+igtl_ndarray_test_01
+igtl_polydata_test_01

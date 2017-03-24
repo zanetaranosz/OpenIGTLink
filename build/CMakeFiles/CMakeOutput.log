@@ -1,0 +1,910 @@
+The system is: Windows - 10.0.14393 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:00:55.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\3.7.0-rc1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\3.7.0-rc1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\3.7.0-rc1\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.88
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/3.7.0-rc1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:00:57.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\3.7.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\3.7.0-rc1\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\3.7.0-rc1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.92
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/3.7.0-rc1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_65dd4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:00.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_65dd4.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_65dd4.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_65dd4.dir\Debug\cmTC_65dd4.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_65dd4.dir\Debug\cmTC_65dd4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_65dd4.dir\Debug\\" /Fd"cmTC_65dd4.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_65dd4.dir\Debug\\" /Fd"cmTC_65dd4.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_65dd4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_65dd4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_65dd4.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_65dd4.dir\Debug\testCCompiler.obj
+  cmTC_65dd4.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_65dd4.exe
+  cmTC_65dd4.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_65dd4.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_65dd4.dir\Debug\cmTC_65dd4.tlog\unsuccessfulbuild".
+  Touching "cmTC_65dd4.dir\Debug\cmTC_65dd4.tlog\cmTC_65dd4.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_65dd4.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.19
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_7588e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:02.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_7588e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_7588e.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_7588e.dir\Debug\cmTC_7588e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_7588e.dir\Debug\cmTC_7588e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7588e.dir\Debug\\" /Fd"cmTC_7588e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7588e.dir\Debug\\" /Fd"cmTC_7588e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_7588e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7588e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7588e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_7588e.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_7588e.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_7588e.exe
+  cmTC_7588e.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7588e.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_7588e.dir\Debug\cmTC_7588e.tlog\unsuccessfulbuild".
+  Touching "cmTC_7588e.dir\Debug\cmTC_7588e.tlog\cmTC_7588e.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_7588e.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.78
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_122b4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:05.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_122b4.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_122b4.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_122b4.dir\Debug\cmTC_122b4.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_122b4.dir\Debug\cmTC_122b4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_122b4.dir\Debug\\" /Fd"cmTC_122b4.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_122b4.dir\Debug\\" /Fd"cmTC_122b4.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_122b4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_122b4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_122b4.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_122b4.dir\Debug\testCXXCompiler.obj
+  cmTC_122b4.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_122b4.exe
+  cmTC_122b4.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_122b4.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_122b4.dir\Debug\cmTC_122b4.tlog\unsuccessfulbuild".
+  Touching "cmTC_122b4.dir\Debug\cmTC_122b4.tlog\cmTC_122b4.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_122b4.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.82
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_4eca2.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:07.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_4eca2.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_4eca2.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_4eca2.dir\Debug\cmTC_4eca2.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_4eca2.dir\Debug\cmTC_4eca2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4eca2.dir\Debug\\" /Fd"cmTC_4eca2.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4eca2.dir\Debug\\" /Fd"cmTC_4eca2.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_4eca2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_4eca2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_4eca2.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_4eca2.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_4eca2.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_4eca2.exe
+  cmTC_4eca2.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_4eca2.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_4eca2.dir\Debug\cmTC_4eca2.tlog\unsuccessfulbuild".
+  Touching "cmTC_4eca2.dir\Debug\cmTC_4eca2.tlog\cmTC_4eca2.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_4eca2.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.86
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_267a3.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:10.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_267a3.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_267a3.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_267a3.dir\Debug\cmTC_267a3.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_267a3.dir\Debug\cmTC_267a3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_267a3.dir\Debug\\" /Fd"cmTC_267a3.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_267a3.dir\Debug\\" /Fd"cmTC_267a3.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_267a3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_267a3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_267a3.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_267a3.dir\Debug\feature_tests.obj
+  cmTC_267a3.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_267a3.exe
+  cmTC_267a3.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_267a3.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_267a3.dir\Debug\cmTC_267a3.tlog\unsuccessfulbuild".
+  Touching "cmTC_267a3.dir\Debug\cmTC_267a3.tlog\cmTC_267a3.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_267a3.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.83
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Determining if the function strnlen exists passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_7468a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:18.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_7468a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_7468a.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_7468a.dir\Debug\cmTC_7468a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_7468a.dir\Debug\cmTC_7468a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strnlen /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7468a.dir\Debug\\" /Fd"cmTC_7468a.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strnlen /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7468a.dir\Debug\\" /Fd"cmTC_7468a.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_7468a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7468a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7468a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_7468a.dir\Debug\CheckFunctionExists.obj
+  cmTC_7468a.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_7468a.exe
+  cmTC_7468a.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7468a.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_7468a.dir\Debug\cmTC_7468a.tlog\unsuccessfulbuild".
+  Touching "cmTC_7468a.dir\Debug\cmTC_7468a.tlog\cmTC_7468a.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_7468a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.84
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_06d17.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:22.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_06d17.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_06d17.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_06d17.dir\Debug\cmTC_06d17.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_06d17.dir\Debug\cmTC_06d17.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06d17.dir\Debug\\" /Fd"cmTC_06d17.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_06d17.dir\Debug\\" /Fd"cmTC_06d17.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_06d17.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_06d17.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_06d17.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_06d17.dir\Debug\CheckIncludeFile.obj
+  cmTC_06d17.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_06d17.exe
+  cmTC_06d17.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_06d17.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_06d17.dir\Debug\cmTC_06d17.tlog\unsuccessfulbuild".
+  Touching "cmTC_06d17.dir\Debug\cmTC_06d17.tlog\cmTC_06d17.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_06d17.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.78
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_e451a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:24.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_e451a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_e451a.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_e451a.dir\Debug\cmTC_e451a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_e451a.dir\Debug\cmTC_e451a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e451a.dir\Debug\\" /Fd"cmTC_e451a.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e451a.dir\Debug\\" /Fd"cmTC_e451a.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_e451a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_e451a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_e451a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_e451a.dir\Debug\CheckIncludeFile.obj
+  cmTC_e451a.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_e451a.exe
+  cmTC_e451a.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_e451a.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_e451a.dir\Debug\cmTC_e451a.tlog\unsuccessfulbuild".
+  Touching "cmTC_e451a.dir\Debug\cmTC_e451a.tlog\cmTC_e451a.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_e451a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.84
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_25236.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:27.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_25236.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_25236.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_25236.dir\Debug\cmTC_25236.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_25236.dir\Debug\cmTC_25236.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_25236.dir\Debug\\" /Fd"cmTC_25236.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_25236.dir\Debug\\" /Fd"cmTC_25236.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_25236.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_25236.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_25236.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_25236.dir\Debug\CheckIncludeFile.obj
+  cmTC_25236.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_25236.exe
+  cmTC_25236.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_25236.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_25236.dir\Debug\cmTC_25236.tlog\unsuccessfulbuild".
+  Touching "cmTC_25236.dir\Debug\cmTC_25236.tlog\cmTC_25236.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_25236.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.85
+
+
+Determining size of int passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_f49b3.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:29.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_f49b3.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_f49b3.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f49b3.dir\Debug\cmTC_f49b3.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_f49b3.dir\Debug\cmTC_f49b3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f49b3.dir\Debug\\" /Fd"cmTC_f49b3.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_INT.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f49b3.dir\Debug\\" /Fd"cmTC_f49b3.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_INT.c
+  
+  CMAKE_SIZEOF_INT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_f49b3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_f49b3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_f49b3.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f49b3.dir\Debug\CMAKE_SIZEOF_INT.obj
+  cmTC_f49b3.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_f49b3.exe
+  cmTC_f49b3.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_f49b3.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_f49b3.dir\Debug\cmTC_f49b3.tlog\unsuccessfulbuild".
+  Touching "cmTC_f49b3.dir\Debug\cmTC_f49b3.tlog\cmTC_f49b3.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_f49b3.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.87
+
+
+Determining size of long passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_74a54.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:31.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_74a54.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_74a54.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_74a54.dir\Debug\cmTC_74a54.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_74a54.dir\Debug\cmTC_74a54.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_74a54.dir\Debug\\" /Fd"cmTC_74a54.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_LONG.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_74a54.dir\Debug\\" /Fd"cmTC_74a54.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_LONG.c
+  
+  CMAKE_SIZEOF_LONG.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_74a54.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_74a54.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_74a54.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_74a54.dir\Debug\CMAKE_SIZEOF_LONG.obj
+  cmTC_74a54.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_74a54.exe
+  cmTC_74a54.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_74a54.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_74a54.dir\Debug\cmTC_74a54.tlog\unsuccessfulbuild".
+  Touching "cmTC_74a54.dir\Debug\cmTC_74a54.tlog\cmTC_74a54.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_74a54.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.83
+
+
+Determining size of void* passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_7f166.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:34.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_7f166.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_7f166.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_7f166.dir\Debug\cmTC_7f166.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_7f166.dir\Debug\cmTC_7f166.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f166.dir\Debug\\" /Fd"cmTC_7f166.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_VOID_P.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f166.dir\Debug\\" /Fd"cmTC_7f166.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_VOID_P.c
+  
+  CMAKE_SIZEOF_VOID_P.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_7f166.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7f166.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7f166.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_7f166.dir\Debug\CMAKE_SIZEOF_VOID_P.obj
+  cmTC_7f166.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_7f166.exe
+  cmTC_7f166.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_7f166.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_7f166.dir\Debug\cmTC_7f166.tlog\unsuccessfulbuild".
+  Touching "cmTC_7f166.dir\Debug\cmTC_7f166.tlog\cmTC_7f166.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_7f166.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.10
+
+
+Determining size of char passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_4674c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:36.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_4674c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_4674c.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_4674c.dir\Debug\cmTC_4674c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_4674c.dir\Debug\cmTC_4674c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4674c.dir\Debug\\" /Fd"cmTC_4674c.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_CHAR.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4674c.dir\Debug\\" /Fd"cmTC_4674c.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_CHAR.c
+  
+  CMAKE_SIZEOF_CHAR.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_4674c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_4674c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_4674c.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_4674c.dir\Debug\CMAKE_SIZEOF_CHAR.obj
+  cmTC_4674c.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_4674c.exe
+  cmTC_4674c.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_4674c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_4674c.dir\Debug\cmTC_4674c.tlog\unsuccessfulbuild".
+  Touching "cmTC_4674c.dir\Debug\cmTC_4674c.tlog\cmTC_4674c.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_4674c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.00
+
+
+Determining size of short passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_dd30e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:39.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_dd30e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_dd30e.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_dd30e.dir\Debug\cmTC_dd30e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_dd30e.dir\Debug\cmTC_dd30e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dd30e.dir\Debug\\" /Fd"cmTC_dd30e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_SHORT.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dd30e.dir\Debug\\" /Fd"cmTC_dd30e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_SHORT.c
+  
+  CMAKE_SIZEOF_SHORT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_dd30e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_dd30e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_dd30e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_dd30e.dir\Debug\CMAKE_SIZEOF_SHORT.obj
+  cmTC_dd30e.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_dd30e.exe
+  cmTC_dd30e.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_dd30e.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_dd30e.dir\Debug\cmTC_dd30e.tlog\unsuccessfulbuild".
+  Touching "cmTC_dd30e.dir\Debug\cmTC_dd30e.tlog\cmTC_dd30e.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_dd30e.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.90
+
+
+Determining size of float passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_a51ce.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:41.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_a51ce.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_a51ce.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_a51ce.dir\Debug\cmTC_a51ce.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_a51ce.dir\Debug\cmTC_a51ce.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a51ce.dir\Debug\\" /Fd"cmTC_a51ce.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_FLOAT.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a51ce.dir\Debug\\" /Fd"cmTC_a51ce.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_FLOAT.c
+  
+  CMAKE_SIZEOF_FLOAT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_a51ce.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_a51ce.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_a51ce.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_a51ce.dir\Debug\CMAKE_SIZEOF_FLOAT.obj
+  cmTC_a51ce.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_a51ce.exe
+  cmTC_a51ce.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_a51ce.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_a51ce.dir\Debug\cmTC_a51ce.tlog\unsuccessfulbuild".
+  Touching "cmTC_a51ce.dir\Debug\cmTC_a51ce.tlog\cmTC_a51ce.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_a51ce.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.87
+
+
+Determining size of double passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_8c162.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:44.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_8c162.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_8c162.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_8c162.dir\Debug\cmTC_8c162.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_8c162.dir\Debug\cmTC_8c162.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8c162.dir\Debug\\" /Fd"cmTC_8c162.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_DOUBLE.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8c162.dir\Debug\\" /Fd"cmTC_8c162.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_DOUBLE.c
+  
+  CMAKE_SIZEOF_DOUBLE.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_8c162.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_8c162.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_8c162.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_8c162.dir\Debug\CMAKE_SIZEOF_DOUBLE.obj
+  cmTC_8c162.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_8c162.exe
+  cmTC_8c162.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_8c162.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_8c162.dir\Debug\cmTC_8c162.tlog\unsuccessfulbuild".
+  Touching "cmTC_8c162.dir\Debug\cmTC_8c162.tlog\cmTC_8c162.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_8c162.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.93
+
+
+Determining size of long long passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_2e8bd.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:46.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_2e8bd.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_2e8bd.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_2e8bd.dir\Debug\cmTC_2e8bd.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_2e8bd.dir\Debug\cmTC_2e8bd.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2e8bd.dir\Debug\\" /Fd"cmTC_2e8bd.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_LONG_LONG.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2e8bd.dir\Debug\\" /Fd"cmTC_2e8bd.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_LONG_LONG.c
+  
+  CMAKE_SIZEOF_LONG_LONG.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_2e8bd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_2e8bd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_2e8bd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_2e8bd.dir\Debug\CMAKE_SIZEOF_LONG_LONG.obj
+  cmTC_2e8bd.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_2e8bd.exe
+  cmTC_2e8bd.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_2e8bd.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_2e8bd.dir\Debug\cmTC_2e8bd.tlog\unsuccessfulbuild".
+  Touching "cmTC_2e8bd.dir\Debug\cmTC_2e8bd.tlog\cmTC_2e8bd.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_2e8bd.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.87
+
+
+Determining size of __int64 passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_adccb.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:49.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_adccb.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_adccb.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_adccb.dir\Debug\cmTC_adccb.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_adccb.dir\Debug\cmTC_adccb.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_adccb.dir\Debug\\" /Fd"cmTC_adccb.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF___INT64.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_adccb.dir\Debug\\" /Fd"cmTC_adccb.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF___INT64.c
+  
+  CMAKE_SIZEOF___INT64.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_adccb.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_adccb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_adccb.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_adccb.dir\Debug\CMAKE_SIZEOF___INT64.obj
+  cmTC_adccb.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_adccb.exe
+  cmTC_adccb.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_adccb.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_adccb.dir\Debug\cmTC_adccb.tlog\unsuccessfulbuild".
+  Touching "cmTC_adccb.dir\Debug\cmTC_adccb.tlog\cmTC_adccb.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_adccb.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.86
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_1b4c9.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.24730.2
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 2017-03-24 12:01:52.
+The target "BeforeGenerateProjectPriFile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\Microsoft\NuGet\Microsoft.NuGet.targets (186,61)" does not exist in the project, and will be ignored.
+Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_1b4c9.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_1b4c9.dir\Debug\".
+  Creating directory "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_1b4c9.dir\Debug\cmTC_1b4c9.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_1b4c9.dir\Debug\cmTC_1b4c9.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1b4c9.dir\Debug\\" /Fd"cmTC_1b4c9.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_INT64_T.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23506 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1b4c9.dir\Debug\\" /Fd"cmTC_1b4c9.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_INT64_T.c
+  
+  CMAKE_SIZEOF_INT64_T.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_1b4c9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_1b4c9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_1b4c9.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_1b4c9.dir\Debug\CMAKE_SIZEOF_INT64_T.obj
+  cmTC_1b4c9.vcxproj -> D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\Debug\cmTC_1b4c9.exe
+  cmTC_1b4c9.vcxproj -> D:/OpenIGTLink/OpenIGTLink/build/CMakeFiles/CMakeTmp/Debug/cmTC_1b4c9.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_1b4c9.dir\Debug\cmTC_1b4c9.tlog\unsuccessfulbuild".
+  Touching "cmTC_1b4c9.dir\Debug\cmTC_1b4c9.tlog\cmTC_1b4c9.lastbuildstate".
+Done Building Project "D:\OpenIGTLink\OpenIGTLink\build\CMakeFiles\CMakeTmp\cmTC_1b4c9.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.94
+
+

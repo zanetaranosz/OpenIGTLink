@@ -1,0 +1,995 @@
+Start testing: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+----------------------------------------------------------
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlMultiThreaderTest1
+1/62 Testing: igtlMultiThreaderTest1
+1/62 Test: igtlMultiThreaderTest1
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlMultiThreaderTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlMultiThreaderTest1" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlMultiThreaderTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlMultiThreaderTest2
+2/62 Testing: igtlMultiThreaderTest2
+2/62 Test: igtlMultiThreaderTest2
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlMultiThreaderTest2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlMultiThreaderTest2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlMultiThreaderTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlMultiThreaderTest3
+3/62 Testing: igtlMultiThreaderTest3
+3/62 Test: igtlMultiThreaderTest3
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlMultiThreaderTest3" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlMultiThreaderTest3" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlMultiThreaderTest3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlMessageFactoryTest
+4/62 Testing: igtlMessageFactoryTest
+4/62 Test: igtlMessageFactoryTest
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlMessageFactoryTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlMessageFactoryTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlMessageFactoryTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTimeStampTest1
+5/62 Testing: igtlTimeStampTest1
+5/62 Test: igtlTimeStampTest1
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTimeStampTest1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTimeStampTest1" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTimeStampTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlMessageBaseTest
+6/62 Testing: igtlMessageBaseTest
+6/62 Test: igtlMessageBaseTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlMessageBaseTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlMessageBaseTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlMessageBaseTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlConditionVariableTest
+7/62 Testing: igtlConditionVariableTest
+7/62 Test: igtlConditionVariableTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlConditionVariableTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlConditionVariableTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlConditionVariableTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlImageMessageTest
+8/62 Testing: igtlImageMessageTest
+8/62 Test: igtlImageMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlImageMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlImageMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlImageMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlImageMessage2Test
+9/62 Testing: igtlImageMessage2Test
+9/62 Test: igtlImageMessage2Test
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlImageMessage2Test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlImageMessage2Test" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlImageMessage2Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlCapabilityMessageTest
+10/62 Testing: igtlCapabilityMessageTest
+10/62 Test: igtlCapabilityMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlCapabilityMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlCapabilityMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlCapabilityMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlStatusMessageTest
+11/62 Testing: igtlStatusMessageTest
+11/62 Test: igtlStatusMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlStatusMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlStatusMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlStatusMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTransformMessageTest
+12/62 Testing: igtlTransformMessageTest
+12/62 Test: igtlTransformMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTransformMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTransformMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTransformMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlPositionMessageTest
+13/62 Testing: igtlPositionMessageTest
+13/62 Test: igtlPositionMessageTest
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlPositionMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlPositionMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlPositionMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlBindMessageTest
+14/62 Testing: igtlBindMessageTest
+14/62 Test: igtlBindMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlBindMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlBindMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlBindMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlColorTableMessageTest
+15/62 Testing: igtlColorTableMessageTest
+15/62 Test: igtlColorTableMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlColorTableMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlColorTableMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlColorTableMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlLabelMetaMessageTest
+16/62 Testing: igtlLabelMetaMessageTest
+16/62 Test: igtlLabelMetaMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlLabelMetaMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlLabelMetaMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlLabelMetaMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlNDArrayMessageTest
+17/62 Testing: igtlNDArrayMessageTest
+17/62 Test: igtlNDArrayMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlNDArrayMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlNDArrayMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlNDArrayMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlLabelMetaMessageTest
+18/62 Testing: igtlImageMetaMessageTest
+18/62 Test: igtlImageMetaMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlImageMetaMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlImageMetaMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlImageMetaMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlPointMessageTest
+19/62 Testing: igtlPointMessageTest
+19/62 Test: igtlPointMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlPointMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlPointMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlPointMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlPolyDataMessageTest
+20/62 Testing: igtlPolyDataMessageTest
+20/62 Test: igtlPolyDataMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlPolyDataMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlPolyDataMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlPolyDataMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlSensorMessageTest
+21/62 Testing: igtlSensorMessageTest
+21/62 Test: igtlSensorMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlSensorMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlSensorMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlSensorMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlStringMessageTest
+22/62 Testing: igtlStringMessageTest
+22/62 Test: igtlStringMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlStringMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlStringMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlStringMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTrackingDataMessageTest
+23/62 Testing: igtlTrackingDataMessageTest
+23/62 Test: igtlTrackingDataMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTrackingDataMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTrackingDataMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTrackingDataMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTrajectoryMessageTest
+24/62 Testing: igtlTrajectoryMessageTest
+24/62 Test: igtlTrajectoryMessageTest
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTrajectoryMessageTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTrajectoryMessageTest" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTrajectoryMessageTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlMessageBaseTest
+25/62 Testing: igtlMessageBaseTestFormatVersion2
+25/62 Test: igtlMessageBaseTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlMessageBaseTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlMessageBaseTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlMessageBaseTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlImageMessageTest
+26/62 Testing: igtlImageMessageTestFormatVersion2
+26/62 Test: igtlImageMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlImageMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlImageMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlImageMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlImageMessage2Test
+27/62 Testing: igtlImageMessage2TestFormatVersion2
+27/62 Test: igtlImageMessage2TestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlImageMessage2TestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlImageMessage2TestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlImageMessage2TestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlBindMessageTest
+28/62 Testing: igtlBindMessageTestFormatVersion2
+28/62 Test: igtlBindMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlBindMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlBindMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlBindMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlCapabilityMessageTest
+29/62 Testing: igtlCapabilityMessageTestFormatVersion2
+29/62 Test: igtlCapabilityMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlCapabilityMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlCapabilityMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlCapabilityMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlColorTableMessageTest
+30/62 Testing: igtlColorTableMessageTestFormatVersion2
+30/62 Test: igtlColorTableMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlColorTableMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlColorTableMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlColorTableMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlConditionVariableTest
+31/62 Testing: igtlConditionVariableTestFormatVersion2
+31/62 Test: igtlConditionVariableTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlConditionVariableTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlConditionVariableTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlConditionVariableTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlLabelMetaMessageTest
+32/62 Testing: igtlLabelMetaMessageTestFormatVersion2
+32/62 Test: igtlLabelMetaMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlLabelMetaMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlLabelMetaMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlLabelMetaMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlNDArrayMessageTest
+33/62 Testing: igtlNDArrayMessageTestFormatVersion2
+33/62 Test: igtlNDArrayMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlNDArrayMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlNDArrayMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlNDArrayMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlLabelMetaMessageTest
+34/62 Testing: igtlImageMetaMessageTestFormatVersion2
+34/62 Test: igtlImageMetaMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlImageMetaMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlImageMetaMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlImageMetaMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlPointMessageTest
+35/62 Testing: igtlPointMessageTestFormatVersion2
+35/62 Test: igtlPointMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlPointMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlPointMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlPointMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlPolyDataMessageTest
+36/62 Testing: igtlPolyDataMessageTestFormatVersion2
+36/62 Test: igtlPolyDataMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlPolyDataMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlPolyDataMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlPolyDataMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlSensorMessageTest
+37/62 Testing: igtlSensorMessageTestFormatVersion2
+37/62 Test: igtlSensorMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlSensorMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlSensorMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlSensorMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlStatusMessageTest
+38/62 Testing: igtlStatusMessageTestFormatVersion2
+38/62 Test: igtlStatusMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlStatusMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlStatusMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlStatusMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlStringMessageTest
+39/62 Testing: igtlStringMessageTestFormatVersion2
+39/62 Test: igtlStringMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlStringMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlStringMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlStringMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTrackingDataMessageTest
+40/62 Testing: igtlTrackingDataMessageTestFormatVersion2
+40/62 Test: igtlTrackingDataMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTrackingDataMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTrackingDataMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTrackingDataMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTrajectoryMessageTest
+41/62 Testing: igtlTrajectoryMessageTestFormatVersion2
+41/62 Test: igtlTrajectoryMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTrajectoryMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTrajectoryMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTrajectoryMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlTransformMessageTest
+42/62 Testing: igtlTransformMessageTestFormatVersion2
+42/62 Test: igtlTransformMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlTransformMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlTransformMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlTransformMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlCommandMessageTest
+43/62 Testing: igtlCommandMessageTestFormatVersion1
+43/62 Test: igtlCommandMessageTestFormatVersion1
+Command: "" "--gtest_filter=*.*FormatVersion1"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlCommandMessageTestFormatVersion1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlCommandMessageTestFormatVersion1" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlCommandMessageTestFormatVersion1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtlCommandMessageTest
+44/62 Testing: igtlCommandMessageTestFormatVersion2
+44/62 Test: igtlCommandMessageTestFormatVersion2
+Command: "" "--gtest_filter=*.*FormatVersion2"
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing
+"igtlCommandMessageTestFormatVersion2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtlCommandMessageTestFormatVersion2" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtlCommandMessageTestFormatVersion2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_image_test
+45/62 Testing: igtl_image_test_01
+45/62 Test: igtl_image_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_image_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_image_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_image_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_header_test
+46/62 Testing: igtl_header_test_01
+46/62 Test: igtl_header_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_header_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_header_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_header_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_transform_test
+47/62 Testing: igtl_transform_test_01
+47/62 Test: igtl_transform_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_transform_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_transform_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_transform_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_status_test
+48/62 Testing: igtl_status_test_01
+48/62 Test: igtl_status_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_status_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_status_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_status_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_util_test
+49/62 Testing: igtl_util_test_01
+49/62 Test: igtl_util_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_util_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_util_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_util_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_position_test
+50/62 Testing: igtl_position_test_01
+50/62 Test: igtl_position_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_position_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_position_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_position_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_capability_test
+51/62 Testing: igtl_capability_test_01
+51/62 Test: igtl_capability_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_capability_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_capability_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_capability_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_colortable_test
+52/62 Testing: igtl_colortable_test_01
+52/62 Test: igtl_colortable_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_colortable_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_colortable_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_colortable_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_imgmeta_test
+53/62 Testing: igtl_imgmeta_test_01
+53/62 Test: igtl_imgmeta_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_imgmeta_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_imgmeta_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_imgmeta_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_lbmeta_test
+54/62 Testing: igtl_lbmeta_test_01
+54/62 Test: igtl_lbmeta_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_lbmeta_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_lbmeta_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_lbmeta_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_point_test
+55/62 Testing: igtl_point_test_01
+55/62 Test: igtl_point_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_point_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_point_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_point_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_tdata_test
+56/62 Testing: igtl_tdata_test_01
+56/62 Test: igtl_tdata_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_tdata_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_tdata_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_tdata_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_trajectory_test
+57/62 Testing: igtl_trajectory_test_01
+57/62 Test: igtl_trajectory_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_trajectory_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_trajectory_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_trajectory_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_sensor_test
+58/62 Testing: igtl_sensor_test_01
+58/62 Test: igtl_sensor_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_sensor_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_sensor_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_sensor_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_string_test
+59/62 Testing: igtl_string_test_01
+59/62 Test: igtl_string_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_string_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_string_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_string_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_bind_test
+60/62 Testing: igtl_bind_test_01
+60/62 Test: igtl_bind_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_bind_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_bind_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_bind_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_ndarray_test
+61/62 Testing: igtl_ndarray_test_01
+61/62 Test: igtl_ndarray_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_ndarray_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_ndarray_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_ndarray_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/OpenIGTLink/OpenIGTLink/build/bin/igtl_polydata_test
+62/62 Testing: igtl_polydata_test_01
+62/62 Test: igtl_polydata_test_01
+Command: ""
+Directory: D:/OpenIGTLink/OpenIGTLink/build/Testing/igtlutil
+"igtl_polydata_test_01" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"igtl_polydata_test_01" end time: Mar 24 12:02 ?rodkowoeuropejski czas stand.
+"igtl_polydata_test_01" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 24 12:02 ?rodkowoeuropejski czas stand.

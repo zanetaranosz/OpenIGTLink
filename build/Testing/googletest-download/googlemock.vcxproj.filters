@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeLists.txt" />
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\73aaf51e6e6b20ab76c4d676a11f59f7\googlemock-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\8b2aa070e384deca47602bd8a8b59542\googlemock-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\ae97a4182734d1f8677e3afaf583f406\googlemock.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\OpenIGTLink\OpenIGTLink\build\Testing\googletest-download\CMakeFiles\googlemock" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EA3EFD2C-B894-340D-8F5E-AD0B43DDB44D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

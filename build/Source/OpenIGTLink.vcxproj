@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DE172169-B701-3FE5-915E-F7C573FC78F6}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>OpenIGTLink</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OpenIGTLink.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OpenIGTLink</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OpenIGTLink.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OpenIGTLink</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OpenIGTLink.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OpenIGTLink</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OpenIGTLink.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OpenIGTLink</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\OpenIGTLink\OpenIGTLink\build;D:\OpenIGTLink\OpenIGTLink\Source;D:\OpenIGTLink\OpenIGTLink\Source\igtlutil;D:\OpenIGTLink\OpenIGTLink\build\Source;D:\OpenIGTLink\OpenIGTLink\build\Source\igtlutil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/OpenIGTLink/OpenIGTLink -BD:/OpenIGTLink/OpenIGTLink/build --check-stamp-file D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/OpenIGTLink/OpenIGTLink/Source/CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;D:\OpenIGTLink\OpenIGTLink\Source\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\OpenIGTLink\OpenIGTLink\build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_header.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_image.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_position.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_transform.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_types.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_util.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_capability.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_win32header.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageHandler.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageHandlerMacro.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlCapabilityMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlClientSocket.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlConditionVariable.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlCreateObjectFunction.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlFastMutexLock.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlImageMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlImageMessage2.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlLightObject.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMacro.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMath.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageBase.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageFactory.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageHeader.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMultiThreader.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMutexLock.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlObjectFactory.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlOSUtil.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlObject.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlObjectFactoryBase.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlPositionMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlServerSocket.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSessionManager.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSimpleFastMutexLock.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSmartPointer.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSocket.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlStatusMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTimeStamp.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTransformMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTypes.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlWin32Header.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlWindows.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlCommon.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_colortable.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_imgmeta.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_lbmeta.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_point.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_tdata.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_qtdata.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_trajectory.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_unit.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_sensor.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_string.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_ndarray.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_bind.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_qtrans.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_polydata.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlColorTableMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlImageMetaMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlLabelMetaMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlPointMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTrackingDataMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlPolyDataMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlQuaternionTrackingDataMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTrajectoryMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlStringMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlUnit.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSensorMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlBindMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlNDArrayMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlCommandMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlQueryMessage.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_command.h" />
+    <ClInclude Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_query.h" />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_header.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_image.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_transform.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_status.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_util.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_position.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_capability.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlClientSocket.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlCapabilityMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlConditionVariable.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlFastMutexLock.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlImageMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlImageMessage2.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlLightObject.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMath.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageBase.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMessageFactory.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMultiThreader.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlMutexLock.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlOSUtil.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlObject.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlObjectFactoryBase.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlPositionMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlServerSocket.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSessionManager.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSimpleFastMutexLock.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSocket.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlStatusMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTimeStamp.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTransformMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_colortable.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_imgmeta.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_lbmeta.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_point.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_tdata.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_qtdata.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_trajectory.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_unit.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_sensor.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_string.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_ndarray.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_bind.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_qtrans.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_polydata.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlColorTableMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlImageMetaMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlLabelMetaMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlPointMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTrackingDataMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlPolyDataMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlQuaternionTrackingDataMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlTrajectoryMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlStringMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlUnit.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlSensorMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlBindMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlNDArrayMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlCommandMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlQueryMessage.cxx"  />
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_command.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\OpenIGTLink\OpenIGTLink\Source\igtlutil\igtl_query.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/OpenIGTLink/OpenIGTLink/build/ZERO_CHECK.vcxproj">
+      <Project>A6EB92E9-7616-39A1-A0B6-E45F19A8645A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
