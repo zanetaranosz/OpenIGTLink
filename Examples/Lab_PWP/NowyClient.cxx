@@ -115,145 +115,72 @@ int main(int argc, char* argv[])
   socket->Send(pointMsg->GetPackPointer(), pointMsg->GetPackSize());
   
 
-  igtl::ServerSocket::Pointer serverSocket;
-  serverSocket = igtl::ServerSocket::New();
-  int r1 = serverSocket->CreateServer(port);
-
-  if (r1 < 0)
-  {
-	  std::cerr << "Cannot create a server socket." << std::endl;
-	  exit(0);
-  }
-
-  igtl::Socket::Pointer socketOdb;
+  
 
   while (1)
   {
-	  //------------------------------------------------------------
-	  // Waiting for Connection
-	  
-	  socketOdb = serverSocket->WaitForConnection(1000);
-
 	  if (socket.IsNotNull()) // if client connected
 	  {
 		  // Create a message buffer to receive header
 		  igtl::MessageHeader::Pointer headerMsg;
 		  headerMsg = igtl::MessageHeader::New();
 
-		  //------------------------------------------------------------
-		  // Allocate a time stamp 
-		  igtl::TimeStamp::Pointer ts;
-		  ts = igtl::TimeStamp::New();
+		  // Initialize receive buffer
+		  headerMsg->InitPack();
 
-		  //------------------------------------------------------------
-		  // loop
-		  for (int i = 0; i < 100; i++)
+		  // Receive generic header from the socket
+		  int r = socket->Receive(headerMsg->GetPackPointer(), headerMsg->GetPackSize());
+		  if (r == 0)
 		  {
+			  socket->CloseSocket();
+		  }
+		  if (r != headerMsg->GetPackSize())
+		  {
+			  continue;
+		  }
 
-			  // Initialize receive buffer
-			  headerMsg->InitPack();
+		  // Deserialize the header
+		  headerMsg->Unpack(1);
 
-			  // Receive generic header from the socket
-			  int r = socketOdb->Receive(headerMsg->GetPackPointer(), headerMsg->GetPackSize());
-			  if (r == 0)
+		  // Create a message buffer to receive transform data
+		  igtl::PointMessage::Pointer pointMsg1;
+		  pointMsg1 = igtl::PointMessage::New();
+		  pointMsg1->SetMessageHeader(headerMsg);
+		  pointMsg1->AllocatePack();
+
+		  // Receive transform data from the socket
+		  socket->Receive(pointMsg1->GetPackBodyPointer(), pointMsg1->GetPackBodySize());
+
+		  // Deserialize the transform data
+		  // If you want to skip CRC check, call Unpack() without argument.
+		  int c = pointMsg1->Unpack(1);
+
+		  if (c & igtl::MessageHeader::UNPACK_BODY) // if CRC check is OK
+		  {
+			  int nElements = pointMsg1->GetNumberOfPointElement();
+			  for (int i = 0; i < nElements; i++)
 			  {
-				  socketOdb->CloseSocket();
-			  }
-			  if (r != headerMsg->GetPackSize())
-			  {
-				  continue;
-			  }
+				  igtl::PointElement::Pointer pointElement;
+				  pointMsg1->GetPointElement(i, pointElement);
 
-			  // Deserialize the header
-			  headerMsg->Unpack();
+				  igtlUint8 rgba[4];
+				  pointElement->GetRGBA(rgba);
 
-			  // Get time stamp
-			  igtlUint32 sec;
-			  igtlUint32 nanosec;
+				  igtlFloat32 pos[3];
+				  pointElement->GetPosition(pos);
 
-			  headerMsg->GetTimeStamp(ts);
-			  ts->GetTimeStamp(&sec, &nanosec);
-
-			  std::cerr << "Time stamp: "
-				  << sec << "." << std::setw(9) << std::setfill('0')
-				  << nanosec << std::endl;
-
-			  // Check data type and receive data body
-			  
-#if OpenIGTLink_PROTOCOL_VERSION >= 2
-			  if (strcmp(headerMsg->GetDeviceType(), "POINT") == 0)
-			  {
-				  ReceivePoint(socket, headerMsg);
-			  }
-			
-#endif //OpenIGTLink_PROTOCOL_VERSION >= 2
-			  else
-			  {
-				  // if the data type is unknown, skip reading.
-				  std::cerr << "Receiving : " << headerMsg->GetDeviceType() << std::endl;
-				  std::cerr << "Size : " << headerMsg->GetBodySizeToRead() << std::endl;
-				  socket->Skip(headerMsg->GetBodySizeToRead(), 0);
+				  std::cerr << "========== Element #" << i << " ==========" << std::endl;
+				  std::cerr << " Name      : " << pointElement->GetName() << std::endl;
+				  std::cerr << " GroupName : " << pointElement->GetGroupName() << std::endl;
+				  std::cerr << " RGBA      : ( " << (int)rgba[0] << ", " << (int)rgba[1] << ", " << (int)rgba[2] << ", " << (int)rgba[3] << " )" << std::endl;
+				  std::cerr << " Position  : ( " << std::fixed << pos[0] << ", " << pos[1] << ", " << pos[2] << " )" << std::endl;
+				  std::cerr << " Radius    : " << std::fixed << pointElement->GetRadius() << std::endl;
+				  std::cerr << " Owner     : " << pointElement->GetOwner() << std::endl;
+				  std::cerr << "================================" << std::endl;
 			  }
 		  }
 	  }
   }
-
-
-
-
-  //------------------------------------------------------------
-  // Close the socket
-  socket->CloseSocket();
-
+  return 1;
 }
 
-
-#if OpenIGTLink_PROTOCOL_VERSION >= 2
-int ReceivePoint(igtl::Socket * socket, igtl::MessageHeader * header)
-{
-
-	std::cerr << "Receiving POINT data type." << std::endl;
-
-	// Create a message buffer to receive transform data
-	igtl::PointMessage::Pointer pointMsg;
-	pointMsg = igtl::PointMessage::New();
-	pointMsg->SetMessageHeader(header);
-	pointMsg->AllocatePack();
-
-	// Receive transform data from the socket
-	socket->Receive(pointMsg->GetPackBodyPointer(), pointMsg->GetPackBodySize());
-
-	// Deserialize the transform data
-	// If you want to skip CRC check, call Unpack() without argument.
-	int c = pointMsg->Unpack(1);
-
-	if (c & igtl::MessageHeader::UNPACK_BODY) // if CRC check is OK
-	{
-		int nElements = pointMsg->GetNumberOfPointElement();
-		for (int i = 0; i < nElements; i++)
-		{
-			igtl::PointElement::Pointer pointElement;
-			pointMsg->GetPointElement(i, pointElement);
-
-			igtlUint8 rgba[4];
-			pointElement->GetRGBA(rgba);
-
-			igtlFloat32 pos[3];
-			pointElement->GetPosition(pos);
-
-			std::cerr << "========== Element #" << i << " ==========" << std::endl;
-			 //std::cerr << " Name      : " << pointElement->GetName() << std::endl;
-			//std::cerr << " GroupName : " << pointElement->GetGroupName() << std::endl;
-			//std::cerr << " RGBA      : ( " << (int)rgba[0] << ", " << (int)rgba[1] << ", " << (int)rgba[2] << ", " << (int)rgba[3] << " )" << std::endl;
-			std::cerr << " Position  : ( " << std::fixed << pos[0] << ", " << pos[1] << ", " << pos[2] << " )" << std::endl;
-			//std::cerr << " Radius    : " << std::fixed << pointElement->GetRadius() << std::endl;
-			//std::cerr << " Owner     : " << pointElement->GetOwner() << std::endl;
-			std::cerr << "================================" << std::endl;
-		}
-	}
-
-	return 1;
-}
-
-
-#endif //OpenIGTLink_PROTOCOL_VERSION >= 2
