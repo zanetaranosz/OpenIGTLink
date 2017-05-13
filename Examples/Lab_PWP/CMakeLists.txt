@@ -10,7 +10,7 @@ find_package(OpenIGTLink REQUIRED)
 include(${OpenIGTLink_USE_FILE})
 
 ADD_EXECUTABLE(NowyKlient   NowyKlient.cxx)
-TARGET_LINK_LIBRARIES(NowyClient OpenIGTLink)
+TARGET_LINK_LIBRARIES(NowyKlient OpenIGTLink)
 
 
 ADD_EXECUTABLE(NowySerwer  NowySerwer.cxx)
